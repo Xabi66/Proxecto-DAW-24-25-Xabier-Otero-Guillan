@@ -19,10 +19,6 @@
   - [3- Requirimentos técnicos](#3--requirimentos-técnicos)
   - [4- Planificación](#4--planificación)
 
-> _EXPLICACIÓN_: Este documento será a páxina de explicación de en que consiste o teu proxecto. Coida a súa redacción con todo ou teu mimo. Elimina posteriormente todas as lineas "EXPLICACIÓN" cando creas finalizada a súa redacción.
-> Podes acompañar á redacción deste ficheiro con imaxes, pero non abuses deles.
-> Explica da mellor forma posible de en que consiste o proxecto é que ferramentas e linguaxes de programación empregarás.
-
 ## 1- Descrición do proxecto
 
 > _EXPLICACIÓN_: Realiza unha breve descrición do anteproxecto.Resalta o fundamental *coas túas propias palabras\*\*. Utiliza unha linguaxe correcta, *pero natural\*\*, que o entenda todo o mundo, mesmo e en especial, as persoas que non teñan un coñecemento técnico avanzado. Pode ser un estracto ou resumo de apartados que xa contemples noutros ficheiros.
@@ -32,6 +28,23 @@
 > - ¿En que consiste o noso proxecto? ¿Cal é o propósito principal da aplicación a desenvolver? ¿Cales son os obxectivos?
 > - ¿O desenvolvemento da aplicación abre unha oportunidade de negocio? ¿É posible comercializala? Como?
 > - ¿Que tecnoloxías son as máis axeitadas para a realización do proxecto?
+
+
+Este proyecto consiste en una plataforma web mediante la cual cualquier persona pueda enterarse de que cursos tiene disponibles a nivel nacional. 
+Se centra principalmente en aquellos cursos que no son ofrecidos directamente por el estado, como es el caso de los ciclos, si no por organizaciones concretas o particulares.
+
+El objetivo es facilitar el acceso a estos cursos a cualquier persona interesada en formarse en alguna materia concreta y agilizar el proceso de matriculacion.
+
+El usuario podra visualizar en que cursos esta matriculado o cuales tiene disponibles para su matriculacion y su informacion, tal como numero de plazas restantes, si es presencial o telematico, si ofrece alguna titulacion o la fecha de inicio y finalizacion. En caso de que el curso requiera algun pago este se gestionara mediante una aplicacion externa.
+
+Por parte del cliente, a traves de esta plataforma tiene un lugar desde el que poder promocionar sus cursos a un amplio público a cambio de un pago por crear el curso con la posibilidad de crear un modelo de suscripción que ofrezca ventajas como un mejor posicionamiento o crear x cursos mensual o anualmente sin coste adicional.
+
+Si bien existen aplicaciones similares, en la mayoria de los casos suelen estar enfocadas a una materia especifica o a los cursos elaborados por una organizacion en concreto. Con esta aplicación se busca aunar en un solo lugar la mayor cantidad posible para todo tipo de materias, buscando sobretodo atraer a las organizaciones mas pequeñas y a particulares, dandoles una forma más cómoda de gestionar sus cursos.
+
+El objetivo final de los cursos no es solo alcanzar un titulo, si no formar a los usuarios. Se ofrece la opcion a los clientes de promocionar sus cursos aunque no otorguen una titulacion como tal, siempre y cuando se demuestre de antemano que el contenido de los mismos sea adecuado mediante una revision preliminar.
+
+Para la realizacion del proyecto se combinaran varias tecnologias. Por la parte del cliente se utilizará fundamentalmente html, css y javascript mientras que por la parte del servidor se utilizará php, ya sea en docker o laravel, junto a una base de datos.
+
 
 ## 2- Empresa
 
@@ -118,23 +131,35 @@
 
 ## 3- Requirimentos técnicos
 
-> _EXPLICACIÓN_: Descrición dos medios materiais e das tecnoloxías necesarias que se usarán para desenvolver o proxecto incluíndo as linguaxes de programación frontend e backend, técnicas, librerías, bases de datos, servizos usados, servidores, API’s, etc.
->
-> - **Infraestructura:** dominio web, servidor web dedicado, servidor de base de datos, almacenamento, memoria, ...
-> - **Backend:** tecnoloxías usadas.
-> - **Frontend:** tecnoloxías usadas
+Para realizar la aplicación será necesario contar con una infraestructura consistente de:
+
+- Un **servidor de bases de datos** que almacene la informacion referente a los usuarios y cursos.
+- Un **dominio** para acceder a la aplicación. 
+- Un **servidor web dedicado** donde alojar la aplicacion web para su utilizacion.
+
+### Backend
+
+En cuanto a Backend se se utilizará **PHP**, ya sea con **Docker** o **Laravel**, junto a una base de datos, como por ejemplo **MariaDB**. 
+Esta parte se encargará de:
+
+- La gestion de los usuarios y clientes.
+- Del proceso de matriculacion.
+- De almacenar la información referente a los cursos y su creación.
+
+### Frontend
+
+En cuanto a Frontend se utilizará fundamentalmente **HTML**, **CSS** y **JavaScript** par:
+
+- Gestionar el como se muestran los cursos.
+- El acceso a la informacion de los mismos.
+- La distribucion de la aplicación.
 
 ## 4- Planificación
 
-> _EXPLICACIÓN_: Inclúe un calendario co tempo estimado a adicar a cada fase do proxecto.
->
-> O proxecto estará formado polas seguintes fases:
->
-> - Estudo preliminar
-> - Análise
-> - Deseño
-> - Codificación e probas (debe ser a fase máis longa).
->
-> Debe facerse un calendario ou un diagrama de Gantt indicando, para cada fase, a data de inicio, a súa duración e breve descrición das tarefas a realizar.
+![Calendario del proyecto](../img/Calendario_Proyecto.PNGimg/)
+![Diagrama de Gant del proyecto](../img/Diagrama_Gant_Proyecto.PNG)
+
+🔗 [Ver documento en Google Drive](https://docs.google.com/spreadsheets/d/1kpykDfHXtSo1yaPI2eACs158QWQv665RncFkcX2uEAA/edit?usp=sharing)
+
 
 [**<-Anterior**](../../README.md)
