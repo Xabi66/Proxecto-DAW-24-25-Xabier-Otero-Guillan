@@ -21,15 +21,6 @@
 
 ## 1- Descrición do proxecto
 
-> _EXPLICACIÓN_: Realiza unha breve descrición do anteproxecto.Resalta o fundamental *coas túas propias palabras\*\*. Utiliza unha linguaxe correcta, *pero natural\*\*, que o entenda todo o mundo, mesmo e en especial, as persoas que non teñan un coñecemento técnico avanzado. Pode ser un estracto ou resumo de apartados que xa contemples noutros ficheiros.
->
-> Neste apartado trátase de describir a análise realizada e a toma de decisións adoptada sobre aspectos básicos ou iniciais do proxecto como:
->
-> - ¿En que consiste o noso proxecto? ¿Cal é o propósito principal da aplicación a desenvolver? ¿Cales son os obxectivos?
-> - ¿O desenvolvemento da aplicación abre unha oportunidade de negocio? ¿É posible comercializala? Como?
-> - ¿Que tecnoloxías son as máis axeitadas para a realización do proxecto?
-
-
 Este proyecto consiste en una plataforma web mediante la cual cualquier persona pueda enterarse de que cursos tiene disponibles a nivel nacional. 
 Se centra principalmente en aquellos cursos que no son ofrecidos directamente por el estado, como es el caso de los ciclos, si no por organizaciones concretas o particulares.
 
@@ -156,7 +147,7 @@ En cuanto a Frontend se utilizará fundamentalmente **HTML**, **CSS** y **JavaSc
 
 ## 4- Planificación
 
-![Calendario del proyecto](../img/Calendario_Proyecto.PNGimg/)
+![Calendario del proyecto](../img/Calendario_Proyecto.PNG)
 ![Diagrama de Gant del proyecto](../img/Diagrama_Gant_Proyecto.PNG)
 
 🔗 [Ver documento en Google Drive](https://docs.google.com/spreadsheets/d/1kpykDfHXtSo1yaPI2eACs158QWQv665RncFkcX2uEAA/edit?usp=sharing)
