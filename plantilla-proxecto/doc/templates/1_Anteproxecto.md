@@ -43,30 +43,38 @@ Para la realizacion del proyecto se combinaran varias tecnologias. Por la parte 
 
 ### 2.1- Idea de negocio
 
-> _EXPLICACIÓN_: Define o producto central, o valor engadido e a utilidade. Se se ogrecen productos aumentados, indicalo tamén.
+El producto central de mi negocio es una aplicación web mediante la cual los usuarios pueden acceder a una amplia variedad de cursos de forma sencilla, cubriendo su necesidad de formación en aquellos temas que les interesan y mediante la cual los clientes pueden promocionar sus cursos, facilitando el alcance de estos a un amplio público.
+
+El valor añadido de esta idea se basa en que fomenta aquellos cursos realizados por organizaciones mas pequeñas o particulares, los cuales suelen tener menor alcance y por tanto no llegan a todos los posibles interesados. Respecto al usuario, el valor añadido respecto a la competencia es que encontrará una variedad mas amplia de cursos que pueden ajustarse a sus expectativas.
+
+Su utilidad radica en facilitar el acceso a la formación a cualquier posible interesado de una manera sencilla e intuitiva, pudiendo acceder a aquellos cursos que por ser impartidos por organizaciones mas pequeñas suelen contar con menos recursos para publicitarlos y una gestión de la matrícula mas tediosa.
+
+Como productos adicionales se incluyen el empleo de una aplicación externa de pago para mayor seguridad y un sistema de gestión de los cursos donde se encuentra matriculado el usuario actualmente.
 
 ### 2.2- Xustificación da idea
 
-> _EXPLICACIÓN_: Neste apartado incluirase a información necesaria para xustificar a realización do proxecto. Debe indicarse como xurdiu a idea do proxecto, que obxectivo se persegue coa súa posta en marcha e/ou que problema vai resolver.
->
-> En este apartado indicade a nivel de idea de negocio:
->
-> - ¿Cal é a necesidade ou necesidades que se pretenden cubrir ou satisfacer?
-> - ¿Existen na actualidade aplicacións ou productos que tenten dar resposta a esa(s) necesidade(s)? ¿En que medida o conseguen?
-> - ¿Trátase de un segmento de mercado desabastecido ou insuficientemente atendido?
-> - ¿Un produto ineficiente? Un mercado novo?
->
-> Para sustentar as xustificación deberás proporcionar datos. Fontes máis utilizadas: INE, IGE, Informes sectoriais de
-> Industria, Statista... Deberás facer unha DAFO.
+Esta idea surge de la necesidad de tener una amplia formación en el mercado laboral actual. Existen muchos interesados en seguir formandose que por la dificultad de acceso a una formación adecuada no logran adquirir todas las competencias que desean. Segun el INE, en 2022 el 50,6% de la población de 18 a 69 años realizó alguna actividad formativa, de los cuales el 43,6% participaron en educación no formal, predominando aquellos cuya edad comprendia de los 18 a los 34 años. Ademas, un 54,6% adquirieron conocimientos mediante apredizaje informal. 
+Por otro lado existen cursos que por falta de medios no alcanzan a todos los posibles candidatos interesados en esa formación. 
+
+Para cubrir estas necesidades, se busca establecer una plataforma que recoja la mayor cantidad posible de estos cursos y los ponga a la disposición de cualquier posible interesado de una forma sencilla y eficiente.
+
+Actualmente existe plataformas similares a esta,como Udemy o Codigo Facilito, que ofertan diversos cursos. Pero estas plataformas suelen centrarse en una rama específica o ofertar solamente sus propios cursos. Ademas, en la mayoria de casos la formación que ofertan suele ser fundamentalmente a distancia.
+
+En cambio, esta aplicación busca aunar todos estos cursos en un solo lugar y ofertar tanto cursos presenciales como telemáticos. Así, se atiende ese segmento del mercado que no esta lo suficientemente atendido, el de las personas que buscan cursos presenciales, ya sea por comodidad o por que consideran que este tipo de formación resulta más eficaz.
+
+Pese a no ser un producto completamente nuevo, es cierto que el mercado actual es ineficiente debido a la dificultad que tienen los usuarios para encontrar con facilidad los cursos que desean ante tanta oferta disponible que se encuentra dispersa. Ademas, tambien atiende por parte del cliente la necesidad de mayor promoción que tienen aquellas entidades mas pequeñas y particulares, a las cuales les cuesta competir ante las grandes organizaciones.
+
+#### DAFO
+
+![DAFO del proyecto](../img/DAFO_Proyecto.PNG)
 
 ### 2.3- Segmento de clientes
 
-> _EXPLICACIÓN_: Neste apartado debes indicar a quen irá dirixido o negocio, os potenciales clientes, respostando as seguinte pregunta: ¿A quen está dirixido?
->
-> Debes:
->
-> - Indicar o segmento ou segmentos cos rasgos principais e cuantificar o mercado.
-> - E se é o caso, diferenciar entre usuario e cliente.
+Este negocio diferencia entre usuarios y clientes:
+
+> - Por parte de los usuarios va dirigido fundamentalmente a jovenes (de entre 16 y 30 años) que deseen formarse en alguna materia concreta o ampliar sus conocimientos, ya sea para mejorar profesionalmente o por gusto. Segun el INE, en 2022 habia en España aproximadamente 7 millones y medio de jovenes comprendidos en este rango de edades. Si asumimos que aproximadamente 1 de cada 5 se interesa por la formación mas alla de las instituciones convencionales, nos da 1 millon y medio de posibles interesados, ademas de aquellos posibles interesados fuera de este rango de edad.
+
+> - Por parte de los clientes va dirigido a aquellas organizaciones mas pequeñas cuyos cursos no tengan el alcance deseado, y tambien a aquellos particulares que deseen compartir su conocimiento y experiencia profesional en cualquier materia. En 2024 España tenía en activo 21 millones y medio de profesionales en activo, entre los cuales podría haber una gran cantidad de interesados en compartir sus enseñanzas y vivencias adquiridas durante su vida laboral.
 
 ### 2.4- Competencia
 
