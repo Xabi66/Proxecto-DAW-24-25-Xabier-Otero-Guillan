@@ -21,6 +21,8 @@
 
 ## 1- Descrición do proxecto
 
+**SABES LO QUE SIGNIFICA LA PALABRA BREVE??**
+
 Este proyecto consiste en una plataforma web mediante la cual cualquier persona pueda enterarse de que cursos tiene disponibles a nivel nacional. 
 Se centra principalmente en aquellos cursos que no son ofrecidos directamente por el estado, como es el caso de los ciclos, si no por organizaciones concretas o particulares.
 
@@ -139,6 +141,10 @@ Para realizar la aplicación será necesario contar con una infraestructura cons
 ### Backend
 
 En cuanto a Backend se se utilizará **PHP**, ya sea con **Docker** o **Laravel**, junto a una base de datos, como por ejemplo **MariaDB**. 
+
+**SON LAS TECNOLOGÍAS TANTO DE DESARROLLO COMO PUESTA EN PRODUCCIÓN, LA INFRAESTRUCTURA ES EL HOSTING, EL DOMINIO,....**
+
+**FUERA TODO ESTO**
 Esta parte se encargará de:
 
 - La gestion de los usuarios y clientes.
@@ -149,11 +155,14 @@ Esta parte se encargará de:
 
 En cuanto a Frontend se utilizará fundamentalmente **HTML**, **CSS** y **JavaScript** par:
 
+**FUERA TODO ESTO**
 - Gestionar el como se muestran los cursos.
 - El acceso a la informacion de los mismos.
 - La distribucion de la aplicación.
 
 ## 4- Planificación
+
+**NO ES CALCAR LO QUE YO OS PONGO DE LAS FASES DE ENTREGA, ES LO QUE CREEIS TU Y LAS FASES QUE REALMENTE APLICARÍAS**
 
 ![Calendario del proyecto](../img/Calendario_Proyecto.PNG)
 ![Diagrama de Gant del proyecto](../img/Diagrama_Gant_Proyecto.PNG)
