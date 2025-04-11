@@ -10,6 +10,8 @@
   - [Índice](#índice)
   - [Guía de contribución](#guía-de-contribución)
   - [Links](#links)
+    
+**ESTA PÁGINA ES LA QUE TIENE QUE ABRIRSE AL ABRIR EL REPOSITORIO!!!!!!**
 
 > *EXPLICACIÓN*: Este documento será a "*páxina de aterrizaxe*" do teu proxecto. Será ou primeiro que vexan vos que se interesen por el. Cúida a sua redacción con todo ou mimo. Elimina posteriormente todas as lineas "EXPLICACIÓN*" cando creas finalizada a súa redacción.
 > Podes acompañar á redacción deste ficheiro con imaxes ou gifs, pero non abuses deles.
