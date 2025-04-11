@@ -21,20 +21,15 @@
 
 ## 1- Descrición do proxecto
 
-Este proyecto consiste en una plataforma web mediante la cual cualquier persona pueda enterarse de que cursos tiene disponibles a nivel nacional. 
-Se centra principalmente en aquellos cursos que no son ofrecidos directamente por el estado, como es el caso de los ciclos, si no por organizaciones concretas o particulares.
+Este proyecto consiste en una plataforma web mediante la cual gestionar las citas y reservas de pequeños negocios locales.
 
-El objetivo es facilitar el acceso a estos cursos a cualquier persona interesada en formarse en alguna materia concreta y agilizar el proceso de matriculacion.
+Los usuarios pueden crear una cuenta y reservar cita desde ahi, pudiendo gestionarlas, reprogramarlas, recibir notificaciones respecto a su cita,...
 
-El usuario podra visualizar en que cursos esta matriculado o cuales tiene disponibles para su matriculacion y su informacion, tal como numero de plazas restantes, si es presencial o telematico, si ofrece alguna titulacion o la fecha de inicio y finalizacion. En caso de que el curso requiera algun pago este se gestionara mediante una aplicacion externa.
+Se mostrará una lista de los servicios que ofrece la empresa para que el usuario seleccione cual o cuales desea y ademas incluya cualquier informacion adicional.
 
-Por parte del cliente, a traves de esta plataforma tiene un lugar desde el que poder promocionar sus cursos a un amplio público a cambio de un pago por crear el curso con la posibilidad de crear un modelo de suscripción que ofrezca ventajas como un mejor posicionamiento o crear x cursos mensual o anualmente sin coste adicional.
+Por parte de la empresa, esta puede consultar las citas que se han reservado y gestionarlas.
 
-Si bien existen aplicaciones similares, en la mayoria de los casos suelen estar enfocadas a una materia especifica o a los cursos elaborados por una organizacion en concreto. Con esta aplicación se busca aunar en un solo lugar la mayor cantidad posible para todo tipo de materias, buscando sobretodo atraer a las organizaciones mas pequeñas y a particulares, dandoles una forma más cómoda de gestionar sus cursos.
-
-El objetivo final de los cursos no es solo alcanzar un titulo, si no formar a los usuarios. Se ofrece la opcion a los clientes de promocionar sus cursos aunque no otorguen una titulacion como tal, siempre y cuando se demuestre de antemano que el contenido de los mismos sea adecuado mediante una revision preliminar.
-
-Para la realizacion del proyecto se combinaran varias tecnologias. Por la parte del cliente se utilizará fundamentalmente html, css y javascript mientras que por la parte del servidor se utilizará php, ya sea en docker o laravel, junto a una base de datos.
+Para la realizacion del proyecto se combinaran varias tecnologias, como por ejemplo html, css, javascript y php, ademas de una base de datos relacional.
 
 
 ## 2- Empresa
@@ -130,28 +125,21 @@ Este negocio diferencia entre usuarios y clientes:
 
 ## 3- Requirimentos técnicos
 
-Para realizar la aplicación será necesario contar con una infraestructura consistente de:
+### Infraestructura
 
-- Un **servidor de bases de datos** que almacene la informacion referente a los usuarios y cursos.
-- Un **dominio** para acceder a la aplicación. 
-- Un **servidor web dedicado** donde alojar la aplicacion web para su utilizacion.
+Para realizar la aplicación será necesario contar con una infraestructura compuesta por de:
+
+- Un **servidor de bases de datos** que almacene la informacion referente a los usuarios y sus reservas.
+- Un **dominio** para acceder facilmente a la aplicación. 
+- Un **servidor web dedicado** donde alojar la aplicacion web para su puesta en producción.
 
 ### Backend
 
-En cuanto a Backend se se utilizará **PHP**, ya sea con **Docker** o **Laravel**, junto a una base de datos, como por ejemplo **MariaDB**. 
-Esta parte se encargará de:
-
-- La gestion de los usuarios y clientes.
-- Del proceso de matriculacion.
-- De almacenar la información referente a los cursos y su creación.
+En el desarrollo del Backend se se utilizará **PHP** junto a una base de datos relacional. 
 
 ### Frontend
 
-En cuanto a Frontend se utilizará fundamentalmente **HTML**, **CSS** y **JavaScript** par:
-
-- Gestionar el como se muestran los cursos.
-- El acceso a la informacion de los mismos.
-- La distribucion de la aplicación.
+En cuanto a Frontend se utilizará fundamentalmente **HTML**, **CSS** y **JavaScript**
 
 ## 4- Planificación
 
