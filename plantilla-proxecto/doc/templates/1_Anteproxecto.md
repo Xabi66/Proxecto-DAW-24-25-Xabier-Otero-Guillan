@@ -21,8 +21,6 @@
 
 ## 1- Descrición do proxecto
 
-**SABES LO QUE SIGNIFICA LA PALABRA BREVE??**
-
 Este proyecto consiste en una plataforma web mediante la cual gestionar las citas y reservas de pequeños negocios locales.
 
 Los usuarios pueden crear una cuenta y reservar cita desde ahi, pudiendo gestionarlas, reprogramarlas, recibir notificaciones respecto a su cita,...
@@ -137,24 +135,13 @@ Para realizar la aplicación será necesario contar con una infraestructura comp
 
 ### Backend
 
-En cuanto a Backend se se utilizará **PHP**, ya sea con **Docker** o **Laravel**, junto a una base de datos, como por ejemplo **MariaDB**. 
-Esta parte se encargará de:
-
-- La gestion de los usuarios y clientes.
-- Del proceso de matriculacion.
-- De almacenar la información referente a los cursos y su creación.
+En el desarrollo del Backend se se utilizará **PHP** junto a una base de datos relacional. 
 
 ### Frontend
 
-En cuanto a Frontend se utilizará fundamentalmente **HTML**, **CSS** y **JavaScript** par:
-
-- Gestionar el como se muestran los cursos.
-- El acceso a la informacion de los mismos.
-- La distribucion de la aplicación.
+En cuanto a Frontend se utilizará fundamentalmente **HTML**, **CSS** y **JavaScript**
 
 ## 4- Planificación
-
-**NO ES CALCAR LO QUE YO OS PONGO DE LAS FASES DE ENTREGA, ES LO QUE CREEIS TU Y LAS FASES QUE REALMENTE APLICARÍAS**
 
 ![Calendario del proyecto](../img/Calendario_Proyecto.PNG)
 ![Diagrama de Gant del proyecto](../img/Diagrama_Gant_Proyecto.PNG)
