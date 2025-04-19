@@ -8,57 +8,71 @@
   - [5- Normativa](#5--normativa)
   - [6- Melloras futuras](#6--melloras-futuras)
 
-> *EXPLICACION*: Este documento describe os requirimentos para "nome do proxecto" especificando que funcionalidade ofrecerá e de que xeito.
-
 ## 1- Descrición Xeral
 
 >*EXPLICACION*: Descrición Xeral do proxecto
 
+Este proyecto consiste en el desarrollo de una aplicación web para la gestión de citas y reservas, dirigida a pequeños negocios tales como peluquerias o clínicas dentales. El objetivo es proporcionar una plataforma económica e intuitiva que no suponga un gran gasto a las empresas a la hora de incorporarla, permitiendo asi que aquellas empresas con menos recursos puedan aumentar su digitalización y reducir el tiempo invertido en gestionar las citas.
+
+Los usuarios podrñan registrarse en la plataforma y a traves de la misma pedir cita y gestionar aquellas que tenga pendientes. Ademas contará con funciones tales como poder saber el tiempo aproximado que llevará el servicio que desea reservar y incluir información adicional al momento de la reserva para que así el negocio pueda organizarse mejor.
+
+Por parte de los clientes, estos obtendran una forma sencilla de gestionar su calendario de citas, pudiendo realizar cualquier modificación sin ningun problema. Ademas, la plataforma está pensada para ajustarse a sus necesidades, pudiendo solicitar que incluya funciones adicionales al momento de contratar el servicio.
+
+La aplicación estará diseñada de forma responsive, haciendola accesible desd ecualquier dispositivo, y combinará tecnologias tales como HTML, CSS; JavaScript y PHP, buscando ofrecer una experiencia lo suficientemente intuitiva como para que cualquier tipo de usuario pueda emplearla aun sin contar con conocimientos tecnológicos.
+
 ## 2- Funcionalidades
 
->*EXPLICACION* Describir que servizos ou operacións se van poder realizar por medio do noso proxecto, indicando que actores interveñen en cada caso.
->
-> Enumeradas, de maneira que na fase de deseño poidamos definir o diagrama ou configuración correspondente a cada funcionalidade.
-> Cada función ten uns datos de entrada e uns datos de saída. Entre os datos de entrada e de saída, realízase un proceso, que debe ser explicado.
-
-Exemplo:
-
-| Acción   |  Descrición        |
-|----------|--------------------|
-| Alta de productos   | Dar de alta os productos na base de datos|
-| Modificar productos | Modificación de productos na base de datos|
-| Presentación dos productos  | Mostra dos productos por medio da páxina web |
+| Acción   |  Descrición        | Actores |
+|----------|--------------------| --------|
+| 1. Gestionar los servicios  | Se añaden, eliminan y modifican los servicios y su informacion | Empresa |
+| 2. Gestionar la disponibilidad | Se gestionan que dias y a que horas la empresa está disponible | Empresa |
+| 3. Consultar las citas pendientes | Se consulta que citas hay pedidas | Empresa |
+| 4. Gestionar las citas | Se modifica o cancela una cita | Usuario o Empresa |
+| 5. Alta de usuarios   | El usuario crea una cuenta proporcionando los datos que se le requieran. | Usuario |
+| 6. Inicio de sesión | Se accede a una cuenta mediante el correo y la contraseña | Usuario o Empresa |
+| 7. Consultar los servicios | Se consulta que servicios se ofertan y su información | Usuario |
+| 8. Comprobar los horarios | Se comprueba a que horas es posible pedir cita para un servicio concreto | Usuario |
+| 9. Pedir una cita | Se pide una cita para un servicio concreto, aportando información adicional si así se desea y realizando el pago en caso de ser necesario | Usuario |
+| 10. Pagar | El usuario paga la reserva a traves de la aplicación externa | Usuario |
+| 11. Consultar el historial | Se consulta el historial de citas | Usuario o Empresa |
 
 ## 3- Tipos de usuarios
 
-> *EXPLICACION* Describir os tipos de usuario que poderán acceder ao noso sistema. Habitualmente os tipos de usuario veñen definidos polas funcionalidades ás cales teñen acceso. En termos xerais existen moitos grupos de usuarios: anónimos, novos, rexistrados, bloqueados, confirmados, verificados, administradores, etc.
->
-> Exemplo:
->
-> - Usuario xenérico, que terá acceso a ...
-> - Usuario técnico, que poderá...
+Los tipos de usuarios que habrá disponibles en la aplicación son:
+
+>-Usuario anónimo, que podrá navegar por la web, ver los servicios que puede reservar junto a su información y para que horarios tiene citas disponibles.
+
+>-Usuario registrado, que podrá realizar las mismas tareas que un usuario anonimo y ademas podrá pedir la cita como tal añadiendole información adicional si asi lo quiere, ver su historial de citas, gestionar sus citas pendientes y recibir cualquier actualización relativa a las mismas.
+
+>-Usuario bloqueado, que debido a X motivos no podrá iniciar sesion en su cuenta y por lo tanto carecerá de la posibilidad de realizar cualquier reserva.
+
+>-Cliente, que será la cuenta de la propia empresa y podrá acceder al panel de control para ver que citas tiene pendientes, gestionar o cancelar las citas, acceder al historial de todas las citas y añadir o modificar los servicios disponibles.
+
+>-Administrador, que será la propia cuenta del desarrollador de la aplicación y podrá modificarla para solucionar errores, incorporar cualquier función que le sea solicitada y modificar el código.
 
 ## 4- Contorno operacional
 
-> *EXPLICACION* Neste apartado deben describirse os recursos necesarios, dende o punto de vista do usuario, para poder operar coa aplicación web. Habitualmente consiste nun navegador web actualizado e unha conexión a internet.
-Se é necesario algún hardware ou software adicional, deberá indicarse.
+Para operar con la aplicación web, el usuario solo necesita disponer de un dispositivo con conexión a internet y un navegador web actualizado.
 
 ## 5- Normativa
 
-> *EXPLICACION* Investigarase que normativa vixente afecta ao desenvolvemento do proxecto e de que maneira. O proxecto debe adaptarse ás esixencias legais dos territorios onde vai operar.
-> 
-> Pola natureza dos sistema de información, unha lei que se vai a ter que mencionar de forma obrigatoria é la [Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDPGDD)](https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673). O ámbito da LOPDPGDD é nacional. Se a aplicación está pensada para operar a nivel europeo, tamén se debe facer referencia á [General Data Protection Regulation (GDPR)](https://eur-lex.europa.eu/eli/reg/2016/679/oj). Na documentación debe afirmarse que o proxecto cumpre coa normativa vixente.
->
-> Para cumplir a LOPDPGDD e/ou GDPR debe ter un apartado na web onde se indique quen é a persoa responsable do tratamento dos datos e para que fins se van utilizar. Habitualmente esta información estructúrase nos seguintes apartados:
->
-> - Aviso legal.
-> - Política de privacidade.
-> - Política de cookies.
->
-> É acosenllable ver [exemplos de webs](https://www.spotify.com/es/legal/privacy-policy/) que conteñan textos legais referenciando a LOPDPGDD ou GDPR.
+El proyecto se adaptará a la normativa vigente en España, al ser una aplicación a nivel nacional, con el objetivo de garantizar el cumplimiento de la ley.
+
+Debido a que la aplicación contará con cuentas de usuario estas contendrán algunos de sus datos personales, por lo que será necesario cumplir con la LOPDPGDD.
+Además, debido al hecho de que la aplicación notificará al usuario el estado de sus citas cuando por ejemplo estas hayan sido reprogramadas, es necesario cumplir también la Ley 34/2002 de Servicios de la Sociedad de la Información y del Comercio Electrónico. Esta ley regula el contacto entre la empresa y el cliente a traves de un intermediario y el envio de notificaciones realizado a traves de la aplicación. Obliga a proporcionar información sobre el resposable de la aplicación y no enviar comunicaciones de caracter comercial sin permiso
+
+Para cumplir con estas normativas, la aplicación incluirá:
+
+>- Aviso legal: Incluyendo toda la información necesaria para identificar al responsable de la aplicación, ademas de explicar la finalidad de la aplicación, sus condiciones de uso, la propiedad intelectual de los contenidos de la aplicación, las responsabilidades y que la aplicación se ajusta a las leyes españolas.
+
+>- Política de privacidad: Explicando qué datos se recogen, cómo y con que fin se emplean, a quien se comparten, que medidas se toman para protegerlos, que derechos tienen los usuarios sobre los mismos y como ejercer esos derechos.
+
+>- Política de cookies: Explicando como se emplean las cookies recogidas, que información almacenan y ofreciendo la posibilidad de escoger cuales se aceptan y cuales se rechazan (pudiendo negarse el uso de todas).
 
 ## 6- Melloras futuras
 
-> *EXPLICACION* É posible que o noso proxecto se centre en resolver un problema concreto que se poderá ampliar no futuro con novas funcionalidades, novas interfaces, etc.
+Este proyecto busca centrarse en crear un gestor de citas adaptado a cada negocio en particular, incorporando aquellas caracteristicas que cada negocio requiera. Por este motivo, lo mas probable es que conforme más negocios contraten este servicio se necesite desenvolver nuevas características que se ajusten a sus necesidades.
+
+Por ejemplo es posible que algun negocio solicitase que la aplicación incluya un apartado con estadísticas para saber que servicios son mas populares. Otra posibilidad sería que por ejemplo un negocio que cuenta con varios profesionales solicite que la aplicación permita agendar citas por separado a cada uno de forma automatica. Tambien es posible que se solicite una funcion que permita reservar citas automaticamente cada x tiempo en negocios donde se realicen varias sesiones para proporcionar un servicio.
 
 [**<-Anterior**](../../README.md)
