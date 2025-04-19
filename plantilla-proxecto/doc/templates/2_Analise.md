@@ -10,8 +10,6 @@
 
 ## 1- Descrición Xeral
 
->*EXPLICACION*: Descrición Xeral do proxecto
-
 Este proyecto consiste en el desarrollo de una aplicación web para la gestión de citas y reservas, dirigida a pequeños negocios tales como peluquerias o clínicas dentales. El objetivo es proporcionar una plataforma económica e intuitiva que no suponga un gran gasto a las empresas a la hora de incorporarla, permitiendo asi que aquellas empresas con menos recursos puedan aumentar su digitalización y reducir el tiempo invertido en gestionar las citas.
 
 Los usuarios podrñan registrarse en la plataforma y a traves de la misma pedir cita y gestionar aquellas que tenga pendientes. Ademas contará con funciones tales como poder saber el tiempo aproximado que llevará el servicio que desea reservar y incluir información adicional al momento de la reserva para que así el negocio pueda organizarse mejor.
