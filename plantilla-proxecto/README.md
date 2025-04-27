@@ -22,8 +22,10 @@ Actualmente el proyecto se encuentra en fase de desarrollo.
 
 ## Descrición
 
-> *EXPLICACIÓN*: Realiza unha breve descrición do proxecto. Non menos de 100 palabras e non máis de 300. Resalta o fundamental *coas túas propias palabras**. Utiliza unha linguaxe correcta, *pero natural**, que o entenda todo o mundo, mesmo e en especial, as persoas que non teñan un coñecemento técnico avanzado. Pode ser un estracto ou resumo de apartados que xa contemples noutros ficheiros.
-> Descrición básica das ferramentas/tecnoloxías/linguaxes de programación,... empregados.
+Kronigest es un sistema de gestión de citas diseñado para pequeños negocios, adaptandose a sus necesidades. 
+Su objetivo principal es facilitar la organización de citas y reservas, permitiendo a los usuarios reservarlas y gestionarlas de forma simple e intuitiva. Para ello cuentan con opciones como saber la duración estimada de cada servicio y la posibilidad de incluir informacion adicional al hacer la reserva.
+Por su parte, las empresas pueden consultar y modificar todas las citas realizadas, ademas de tener la capacidad de gestionar su horario de apertura y los servicios que ofertan. 
+Esta aplicación emplea una mezcla de varias tecnologias, entre las que se incluyen HTML, CSS, JavaScript, PHP y MySQL
 
 ## Instalación / Posta en marcha
 
