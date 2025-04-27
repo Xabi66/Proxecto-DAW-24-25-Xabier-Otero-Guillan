@@ -31,7 +31,6 @@ Por parte de la empresa, esta puede consultar las citas que se han reservado y g
 
 Para la realizacion del proyecto se combinaran varias tecnologias, como por ejemplo html, css, javascript y php, ademas de una base de datos relacional.
 
-
 ## 2- Empresa
 
 ### 2.1- Idea de negocio
