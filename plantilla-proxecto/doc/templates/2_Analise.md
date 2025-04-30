@@ -46,7 +46,7 @@ Los tipos de usuarios que habrá disponibles en la aplicación son:
 
 >-Cliente, que será la cuenta de la propia empresa y podrá acceder al panel de control para ver que citas tiene pendientes, gestionar o cancelar las citas, acceder al historial de todas las citas y añadir o modificar los servicios disponibles.
 
->-Administrador, que será la propia cuenta del desarrollador de la aplicación y podrá modificarla para solucionar errores, incorporar cualquier función que le sea solicitada y modificar el código.
+>-Administrador, que será la propia cuenta del desarrollador de la aplicación y podrá modificarla para solucionar errores, incorporar cualquier función que le sea solicitada y **modificar el código????**.
 
 ## 4- Contorno operacional
 
@@ -56,6 +56,7 @@ Para operar con la aplicación web, el usuario solo necesita disponer de un disp
 
 El proyecto se adaptará a la normativa vigente en España, al ser una aplicación a nivel nacional, con el objetivo de garantizar el cumplimiento de la ley.
 
+**INDICA QUIEN ES EL RESPONSABLE, QUE DATOS SE ALMACENAS, DONDE ESTÁ ESTA INFORMACIÓN Y COMO PODEMOS CANDELARLOS O MODIFICAR EL ACCESO A ESTOS DATOS**
 Debido a que la aplicación contará con cuentas de usuario estas contendrán algunos de sus datos personales, por lo que será necesario cumplir con la LOPDPGDD.
 Además, debido al hecho de que la aplicación notificará al usuario el estado de sus citas cuando por ejemplo estas hayan sido reprogramadas, es necesario cumplir también la Ley 34/2002 de Servicios de la Sociedad de la Información y del Comercio Electrónico. Esta ley regula el contacto entre la empresa y el cliente a traves de un intermediario y el envio de notificaciones realizado a traves de la aplicación. Obliga a proporcionar información sobre el resposable de la aplicación y no enviar comunicaciones de caracter comercial sin permiso
 
