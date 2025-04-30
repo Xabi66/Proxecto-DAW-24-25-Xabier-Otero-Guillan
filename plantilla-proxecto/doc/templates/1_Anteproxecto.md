@@ -186,7 +186,7 @@ Todo esto depende de los requisitos de las mismas, siendo en algunos casos neces
 ## 3- Requirimentos técnicos
 
 ### Infraestructura
-
+**DETALLA LA INFRAESTRUCTURA INDICANDO LAS CARACTERÍSTICAS DEL HOSTING**
 Para realizar la aplicación será necesario contar con una infraestructura compuesta por de:
 
 - Un **servidor de bases de datos** que almacene la informacion referente a los usuarios y sus reservas.
@@ -195,7 +195,7 @@ Para realizar la aplicación será necesario contar con una infraestructura comp
 
 ### Backend
 
-En el desarrollo del Backend se se utilizará **PHP** junto a una base de datos relacional. 
+En el desarrollo del Backend se se utilizará **PHP** junto a una base de datos relacional.  **QUE BBDD**
 
 ### Frontend
 
