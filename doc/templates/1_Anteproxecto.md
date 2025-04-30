@@ -186,16 +186,16 @@ Todo esto depende de los requisitos de las mismas, siendo en algunos casos neces
 ## 3- Requirimentos técnicos
 
 ### Infraestructura
-**DETALLA LA INFRAESTRUCTURA INDICANDO LAS CARACTERÍSTICAS DEL HOSTING**
-Para realizar la aplicación será necesario contar con una infraestructura compuesta por de:
 
-- Un **servidor de bases de datos** que almacene la informacion referente a los usuarios y sus reservas.
+Para realizar la aplicación será necesario contar con una infraestructura compuesta por:
+
+- Un **servidor de bases de datos** que almacene la informacion referente a los usuarios sus reservas.
 - Un **dominio** para acceder facilmente a la aplicación. 
-- Un **servidor web dedicado** donde alojar la aplicacion web para su puesta en producción.
+- Un **servidor web dedicado** donde alojar la aplicacion web para su puesta en producción. Será necesario que incluya soporte para PHP y MariaDB y la posibilidad de crear copias de seguridad automáticas y un certificado SSL para realizar conexiones HTTPS. Ademas debería tener entre 1-2 CPU virtuales, unos 4GB de RAM y almacenamiento SSD de mínimo 10GB, para de ese modo garantizar el correcto funcionamiento de la aplicación.
 
 ### Backend
 
-En el desarrollo del Backend se se utilizará **PHP** junto a una base de datos relacional.  **QUE BBDD**
+En el desarrollo del Backend se se utilizará **PHP** junto a la base de datos relacional MariaDB.
 
 ### Frontend
 

@@ -42,11 +42,7 @@ Los tipos de usuarios que habrá disponibles en la aplicación son:
 
 >-Usuario registrado, que podrá realizar las mismas tareas que un usuario anonimo y ademas podrá pedir la cita como tal añadiendole información adicional si asi lo quiere, ver su historial de citas, gestionar sus citas pendientes y recibir cualquier actualización relativa a las mismas.
 
->-Usuario bloqueado, que debido a X motivos no podrá iniciar sesion en su cuenta y por lo tanto carecerá de la posibilidad de realizar cualquier reserva.
-
 >-Cliente, que será la cuenta de la propia empresa y podrá acceder al panel de control para ver que citas tiene pendientes, gestionar o cancelar las citas, acceder al historial de todas las citas y añadir o modificar los servicios disponibles.
-
->-Administrador, que será la propia cuenta del desarrollador de la aplicación y podrá modificarla para solucionar errores, incorporar cualquier función que le sea solicitada y **modificar el código????**.
 
 ## 4- Contorno operacional
 
@@ -56,11 +52,10 @@ Para operar con la aplicación web, el usuario solo necesita disponer de un disp
 
 El proyecto se adaptará a la normativa vigente en España, al ser una aplicación a nivel nacional, con el objetivo de garantizar el cumplimiento de la ley.
 
-**INDICA QUIEN ES EL RESPONSABLE, QUE DATOS SE ALMACENAS, DONDE ESTÁ ESTA INFORMACIÓN Y COMO PODEMOS CANDELARLOS O MODIFICAR EL ACCESO A ESTOS DATOS**
 Debido a que la aplicación contará con cuentas de usuario estas contendrán algunos de sus datos personales, por lo que será necesario cumplir con la LOPDPGDD.
 Además, debido al hecho de que la aplicación notificará al usuario el estado de sus citas cuando por ejemplo estas hayan sido reprogramadas, es necesario cumplir también la Ley 34/2002 de Servicios de la Sociedad de la Información y del Comercio Electrónico. Esta ley regula el contacto entre la empresa y el cliente a traves de un intermediario y el envio de notificaciones realizado a traves de la aplicación. Obliga a proporcionar información sobre el resposable de la aplicación y no enviar comunicaciones de caracter comercial sin permiso
 
-Para cumplir con estas normativas, la aplicación incluirá:
+Cada empresa será responsable de como use los datos proporcionados por sus clientes, los cuales en principio serán su nombre y correo electrónico, aunque segun el tipo de negocio podría ser necesario incluir algun dato personal mas. Los usuarios podrán modificar en cualquier momento estos datos almacenados, ademas de poder solicitar la eliminación de la cuenta y con ello eliminar todo dato personal incluido en la misma. Toda la información referente al tratamiento de estos datos será recogida en las siguientes secciones de la aplicación:
 
 >- Aviso legal: Incluyendo toda la información necesaria para identificar al responsable de la aplicación, ademas de explicar la finalidad de la aplicación, sus condiciones de uso, la propiedad intelectual de los contenidos de la aplicación, las responsabilidades y que la aplicación se ajusta a las leyes españolas.
 
