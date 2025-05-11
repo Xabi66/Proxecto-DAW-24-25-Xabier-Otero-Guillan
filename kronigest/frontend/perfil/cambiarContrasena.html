@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/frontend/assets/css/generales.css" />
+  <script src="/frontend/assets/js/cambiarContrasena.js" defer></script>
+  <title>Cambiar Contraseña</title>
+</head>
+<body>
+  <header class="header">
+    <a href="/frontend/index.html">
+      <img src="/frontend/assets/img/logo_qkorte.png" alt="Logo de la empresa, haz clic para volver a la página de inicio"/>
+    </a>
+    
+    <nav class="header_nav">
+      <ul>
+        <li>
+          <a class="enlace_cabecera" href="/frontend/index.html">Inicio</a>
+        </li>
+        <li>
+          <a class="enlace_cabecera" href="/frontend/perfil/index.html">Perfil de usuario</a>
+        </li>
+        <li>
+          <a class="enlace_cabecera" href="/frontend/notificaciones.html">Notificaciones</a>
+        </li>
+        <li>
+          <a class="enlace_cabecera" href="/frontend/citas/index.html">Citas pendientes</a>
+        </li>
+        <li>
+          <a class="enlace_cabecera" href="/frontend/servicios/index.html">Servicios</a>
+        </li>
+        <li>
+          <a class="enlace_cabecera" href="/frontend/historial.html">Historial de citas</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>CAMBIAR CONTRASEÑA</h1>
+
+    <form id="formulario_edicion">
+        <label for="contrasena_actual">Contraseña actual</label>
+        <input type="password" name="contrasena_actual" id="contrasena_actual" minlength="6" maxlength="16" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$&%\.])[A-Za-z\d@#$&%\.]{6,16}$" required> <br><br>           
+        <p class="requisitos">La contraseña debe tener entre 6 y 16 caracteres y incluir al menos una mayúscula, una minúscula, un número y un caracter especial</p><br>
+        
+        <label for="contrasena">Contraseña nueva</label>
+        <input type="password" name="contrasena" id="contrasena" minlength="6" maxlength="16" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$&%\.])[A-Za-z\d@#$&%\.]{6,16}$" required> <br><br>           
+        
+        <label for="contrasena2">Repita la contraseña nueva</label>
+        <input type="password" name="contrasena2" id="contrasena2" minlength="6" maxlength="16" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$&%\.])[A-Za-z\d@#$&%\.]{6,16}$" required>            
+      
+        <p id="mensaje_error"></p>
+      <button type="submit">Confirmar Cambios</button>    
+    </form>   
+    <a href="./index.html">Volver atras</a>   
+  </main>
+  
+  <footer>
+    <p><strong>Teléfono:</strong> <a class="enlace_cabecera" href="tel:+655238754" title="Llama al 655238754">+655238754</a></p>
+    <p><strong>Correo electrónico:</strong> <a class="enlace_cabecera" href="mailto:qkorte@gmail.com" title="Manda un correo a qkorte@gmail.com">qkorte@gmail.com</a></p>
+    <p><strong>Horario:</strong> Lunes - Sábado: 10:00 - 14:00 y 16:00 - 20:00</p>
+    <p><strong>Dirección:</strong> Rúa Galicia 4, 36980 O Grove (Pontevedra)</p>
+  </footer>
+</body>
+</html>

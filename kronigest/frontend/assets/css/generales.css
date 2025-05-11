@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --clr-cabeceras: #204359;
+    --clr-cabeceras-texto: white;
+    --clr-cabeceras-enlaces: #7DF5FF ;
+    --clr-cabeceras-enlaces-hover: #42abb4 ;
+}
+
+body {
+    max-width: 100vw;
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*Estilos header*/
+header{
+    background-color: var(--clr-cabeceras);
+    color: var(--clr-cabeceras-texto);
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 5px 5%;
+}
+
+.header_nav{
+    display: flex;
+    align-items: center;
+}
+
+.header_nav > ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.enlace_cabecera{
+    color: var(--clr-cabeceras-enlaces);
+    text-decoration: none;
+}
+
+.enlace_cabecera:hover{
+    color: var(--clr-cabeceras-enlaces-hover);
+    text-decoration: none;
+}
+
+/*Estilos main*/
+main{
+    flex: 1;
+
+    padding: 1%;
+}
+
+/*Estilos footer*/
+footer{
+    color: var(--clr-cabeceras-texto);
+    background-color: var(--clr-cabeceras);
+
+    padding: 10px;
+    
+}
+
+footer > p{
+    margin-bottom: 5px;
+}
+
+/*Estilos dialog*/
+dialog {
+    padding: 1.5rem;
+    background-color: #fafafa;
+
+    margin: 0 auto;
+    position: fixed;
+    top: 25%;
+}
+
+dialog > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
