@@ -31,11 +31,11 @@ Esta aplicación emplea una mezcla de varias tecnologias, entre las que se inclu
 
 Pasos para la instalación del proyecto:
 
->- Descargar y descomprimir el zip del proyecto
->- Entrar desde una terminal en la carpeta kronigest y ejecutar el comando sudo docker-compose up. Cuando pida una contraseña introducir abc123.
->- Desde un navegador acceder a localhost:8000 y iniciar sesión. El usuario es root y la contraseña bitnami
->- Ejecutar todo el archivo sql dentro de kronigest/bases_de_datos/qkorte.sql
->- Desde un navegador acceder a localhost para utilizar la aplicación. En caso de querer usar la cuenta del administrador el correo es qkorte@gmail.com y la contraseña es Abc123.
+1. Descargar y descomprimir el zip del proyecto
+2. Entrar desde una terminal en la carpeta kronigest y ejecutar el comando sudo docker-compose up. Cuando pida una contraseña introducir abc123.
+3. Desde un navegador acceder a localhost:8000 y iniciar sesión. El usuario es root y la contraseña bitnami
+4. Ejecutar todo el archivo sql dentro de kronigest/bases_de_datos/qkorte.sql
+5. Desde un navegador acceder a localhost para utilizar la aplicación. En caso de querer usar la cuenta del administrador el correo es qkorte@gmail.com y la contraseña es Abc123.
 
 ## Uso
 
