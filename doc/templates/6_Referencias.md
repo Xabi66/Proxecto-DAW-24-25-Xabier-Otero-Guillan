@@ -10,7 +10,13 @@
 
 ## 1- Sitios web de documentación técnica
 
+1. [Manual de PHP](https://www.php.net/manual/en/)
+2. [Guia de Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+3. [Guia de CSS](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics)
+
 ## 2- Fontes de interes
+
+1. [w3schools](https://www.w3schools.com/): Ofrece varios ejemplos y tutoriales para una gran variedad de lenguajes.
 
 ## 3- Sitios oficiais do software utilizado
 

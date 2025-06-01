@@ -30,13 +30,11 @@ Cambios realizados sobre el prototipo original:
 
 ## 2- Prototipos
 
-🔗 [Ver Figma](https://www.figma.com/design/kikFpU4xkhWabWEbbvvzY4/ProyectoDAW?node-id=2-2&t=e9g2RXawkTYaEqbH-1)
+[Ver Figma](https://www.figma.com/design/kikFpU4xkhWabWEbbvvzY4/ProyectoDAW?node-id=2-2&t=e9g2RXawkTYaEqbH-1)
 
 ## 3- Innovación
 
 ## 4- Probas
-
-Deben describirse as probas realizadas e conclusión obtidas. Describir os problemas atopados e como foron solucionados.
 
 Pruebas:
 
@@ -61,8 +59,8 @@ Pruebas:
 > - Evita que el administrador borre su cuenta deshabilitando el boton correspondiente y aunque se habilite tampoco realiza el borrado.
 > - Permite editar la información del perfil como apellidos o correo
 > - Valida que al cambiar contraseña la actual sea correcta, que la nueva no sea igual que la actual y que el campo de repetir contraseña coincida con el de nueva contraseña
-> - - Cierra la sesión al cambiar la contraseña
-> - - Redirige a iniciar sesión si no hay ninguna sesión iniciada
+> - Cierra la sesión al cambiar la contraseña
+> - Redirige a iniciar sesión si no hay ninguna sesión iniciada
 
 4. Servicios:
 > - Permite ver los servicios disponibles

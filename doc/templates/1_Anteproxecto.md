@@ -242,7 +242,7 @@ En cuanto a Frontend se utilizará fundamentalmente **HTML**, **CSS** y **JavaSc
 ![Calendario del proyecto](../img/Calendario_Proyecto.PNG)
 ![Diagrama de Gant del proyecto](../img/Diagrama_Gant_Proyecto.PNG)
 
-🔗 [Ver documento en Google Drive](https://docs.google.com/spreadsheets/d/1kpykDfHXtSo1yaPI2eACs158QWQv665RncFkcX2uEAA/edit?usp=sharing)
+[Ver documento en Google Drive](https://docs.google.com/spreadsheets/d/1kpykDfHXtSo1yaPI2eACs158QWQv665RncFkcX2uEAA/edit?usp=sharing)
 
 
 [**<-Anterior**](../../README.md)

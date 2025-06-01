@@ -26,6 +26,6 @@
 
 ## 4- Deseño de interface de usuarios
 
-🔗 [Ver Figma](https://www.figma.com/design/kikFpU4xkhWabWEbbvvzY4/ProyectoDAW?node-id=2-2&t=e9g2RXawkTYaEqbH-1)
+[Ver Figma](https://www.figma.com/design/kikFpU4xkhWabWEbbvvzY4/ProyectoDAW?node-id=2-2&t=e9g2RXawkTYaEqbH-1)
 
 [**<-Anterior**](../../README.md)
