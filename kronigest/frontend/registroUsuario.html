@@ -3,69 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/frontend/assets/css/generales.css" />
-    <script src="assets/js/registroUsuario.js" defer></script>
+    <link rel="stylesheet" href="/assets/css/generales.css" />
+    <script src="/assets/js/registroUsuario.js" type="module" defer></script>
     <title>Registro de usuarios</title>
 </head>
 <body>
-  <header class="header">
-    <a href="/frontend/index.html">
-      <img src="/frontend/assets/img/logo_qkorte.png" alt="Logo de la empresa, haz clic para volver a la página de inicio"/>
-    </a>
-    
-    <nav class="header_nav">
-      <ul>
-        <li>
-          <a class="enlace_cabecera" href="/frontend/index.html">Inicio</a>
-        </li>
-        <li>
-          <a class="enlace_cabecera" href="/frontend/perfil/index.html">Perfil de usuario</a>
-        </li>
-        <li>
-          <a class="enlace_cabecera" href="/frontend/notificaciones.html">Notificaciones</a>
-        </li>
-        <li>
-          <a class="enlace_cabecera" href="/frontend/citas/index.html">Citas pendientes</a>
-        </li>
-        <li>
-          <a class="enlace_cabecera" href="/frontend/servicios/index.html">Servicios</a>
-        </li>
-        <li>
-          <a class="enlace_cabecera" href="/frontend/historial.html">Historial de citas</a>
-        </li>
-      </ul>
-    </nav>
+  <header id="header">
   </header>
 
     <main>
-        <h1>Registro</h1>
+        <h1>REGISTRO</h1>
         <form id="formulario_registro">
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" pattern="^[A-ZÁÉÍÓÚÑ][A-Za-záéíóúÁÉÍÓÚñÑ]*(?: [A-Za-záéíóúÁÉÍÓÚñÑ]+)*$" required><br><br>
+            <input type="text" name="nombre" id="nombre" pattern="^[A-ZÁÉÍÓÚÑ][A-Za-záéíóúÁÉÍÓÚñÑ]*(?: [A-Za-záéíóúÁÉÍÓÚñÑ]+)*$" required>
         
             <label for="apellidos">Apellidos</label>
-            <input type="text" name="apellidos" id="apellidos" pattern="^[A-ZÁÉÍÓÚÑ][A-Za-záéíóúÁÉÍÓÚñÑ]*(?: [A-Za-záéíóúÁÉÍÓÚñÑ]+)*$"><br><br>
+            <input type="text" name="apellidos" id="apellidos" pattern="^[A-ZÁÉÍÓÚÑ][A-Za-záéíóúÁÉÍÓÚñÑ]*(?: [A-Za-záéíóúÁÉÍÓÚñÑ]+)*$">
         
             <label for="email">Correo electrónico</label>
-            <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" required><br><br>
+            <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" required>
         
             <label for="contrasena">Contraseña</label>
-            <input type="password" name="contrasena" id="contrasena" minlength="6" maxlength="16" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$&%\.])[A-Za-z\d@#$&%\.]{6,16}$" required><br><br>
-            <p class="requisitos">La contraseña debe tener entre 6 y 16 caracteres y incluir al menos una mayúscula, una minúscula, un número y un caracter especial</p><br>
+            <input type="password" name="contrasena" id="contrasena" minlength="6" maxlength="16" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$&%\.])[A-Za-z\d@#$&%\.]{6,16}$" required>
+            <p class="requisitos">La contraseña debe tener entre 6 y 16 caracteres e incluir al menos una mayúscula, una minúscula, un número y un caracter especial</p>
+            
             <label for="contrasena2">Repita la contraseña</label>
-            <input type="password" name="contrasena2" id="contrasena2" minlength="6" maxlength="16" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$&%\.])[A-Za-z\d@#$&%\.]{6,16}$"  required><br><br>
+            <input type="password" name="contrasena2" id="contrasena2" minlength="6" maxlength="16" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$&%\.])[A-Za-z\d@#$&%\.]{6,16}$"  required>
 
             <p id="mensaje_error"></p>
             <button type="submit">Registrar</button>            
         </form>
-        <h2>¿Ya tienes una cuenta?</h2>
-        <a href="/frontend/inicioSesion.html">Iniciar Sesión</a>
+        <section class="section_botonera">
+            <h2>¿Ya tienes una cuenta?</h2>
+            <button type="button" onclick="location.href='inicioSesion.html'">Ir a inicio de sesion</button>
+        </section>     
     </main>
-    <footer>
-      <p><strong>Teléfono:</strong> <a class="enlace_cabecera" href="tel:+655238754" title="Llama al 655238754">+655238754</a></p>
-      <p><strong>Correo electrónico:</strong> <a class="enlace_cabecera" href="mailto:qkorte@gmail.com" title="Manda un correo a qkorte@gmail.com">qkorte@gmail.com</a></p>
-      <p><strong>Horario:</strong> Lunes - Sábado: 10:00 - 14:00 y 16:00 - 20:00</p>
-      <p><strong>Dirección:</strong> Rúa Galicia 4, 36980 O Grove (Pontevedra)</p>
+    <footer id="footer">
     </footer>
 </body>
 </html>

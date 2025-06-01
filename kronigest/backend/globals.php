@@ -1,4 +1,4 @@
 <?php
 //Rutas globales
-define("PATH_MODEL",$_SERVER["DOCUMENT_ROOT"]."/backend/model/");
-define("PATH_CONTROLLER",$_SERVER["DOCUMENT_ROOT"]."/backend/controller/");
+define("PATH_MODEL", __DIR__ . "/model/");
+define("PATH_CONTROLLER", __DIR__ . "/controller/");

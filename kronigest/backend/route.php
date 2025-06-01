@@ -36,7 +36,7 @@ try {
 }
 
 //Si despues del endpoint hay solo un elemento y se trata de alguno de los metodos esperados que no son crud
-if (count($uri) == 5 && ($uri[4] === 'login' || $uri[4] === 'sesion' || $uri[4] === 'logout')) {
+if (count($uri) == 5 && ($uri[4] === 'login' || $uri[4] === 'sesion' || $uri[4] === 'logout' || $uri[4] === 'shifts' || $uri[4] === 'history' || $uri[4] === 'pending')) {
     //Si se realizó la llamada desde el endpoint user
     if ($endpoint === 'user') {
         $controlador = new UserController();
@@ -51,6 +51,23 @@ if (count($uri) == 5 && ($uri[4] === 'login' || $uri[4] === 'sesion' || $uri[4] 
                 break;
             case 'sesion':
                 $controlador->sesion();
+                break;
+        }
+    }
+    //Si se realizó la llamada desde el endpoint reserve
+    if ($endpoint === 'reserve') {
+        $controlador = new ReserveController();
+        switch ($uri[4]) {
+            case 'shifts':
+                $json = file_get_contents('php://input');
+                $controlador->shifts($json);
+                break;
+            case 'history':
+                $controlador->history();
+                break;
+            case 'pending':
+                $json = file_get_contents('php://input');
+                $controlador->pending($json);
                 break;
         }
     }

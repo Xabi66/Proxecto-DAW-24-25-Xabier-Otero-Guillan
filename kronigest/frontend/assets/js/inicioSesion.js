@@ -1,3 +1,5 @@
+import { loadHeaderFooter } from './functions.js';
+
 const $d=document,
     $formulario_inicio_sesion=$d.querySelector("#formulario_inicio_sesion"),
     $mensaje_error=$d.querySelector("#mensaje_error")
@@ -14,7 +16,7 @@ async function comprobarSesion() {
 
     if (resp.ok) {
         //Redirije al usuario si ya hay una sesion activa
-        window.location.href = "/frontend/index.html";
+        window.location.href = "/perfil/index.html";
     }
 }
 
@@ -30,7 +32,7 @@ async function iniciarSesion(datos) {
     const mensaje = await resp.json();
 
     if (resp.ok) {
-        window.location.href = "/frontend/perfil/index.html";
+        window.location.href = "/perfil/index.html";
     } else {
         $mensaje_error.textContent = mensaje.error || "Error. No se pudo iniciar sesión.";
     }
@@ -42,8 +44,11 @@ $d.addEventListener("DOMContentLoaded", async ev => {
     try {
         await comprobarSesion();
     } catch (error) {
-        window.location.href = "/frontend/index.html";   
+        window.location.href = "/index.html";   
     }
+
+    //Cargamos el header y footer
+    loadHeaderFooter;
 
     //Al hacer submit
     $formulario_inicio_sesion.addEventListener("submit", async ev => {
@@ -69,6 +74,8 @@ $d.addEventListener("DOMContentLoaded", async ev => {
 
         //Se hace un try catch de la llamada a la funcion para que si falla se muestre un mensaje de error
         try {
+            //Vuelve a comprobar que no haya una sesion iniciada por si se inicio en otra ventana
+            await comprobarSesion();
             await iniciarSesion(datos);
         } catch (error) {
             $mensaje_error.textContent = "Error de conexión con el servidor.";

@@ -58,7 +58,7 @@ class UserModel extends Model{
 
     public function get($user_id):User|null
     {
-        $sql = "SELECT * FROM Usuarios WHERE id=?";
+        $sql = "SELECT * FROM usuarios WHERE id=?";
         $pdo = self::getConnection();
         $resultado = null;
         try {
@@ -95,7 +95,9 @@ class UserModel extends Model{
             $statement->bindValue(":email", $user->email, PDO::PARAM_STR);
             $statement->bindValue(":contrasena", $user->contrasena, PDO::PARAM_STR);
 
-            $resultado = $statement->execute();
+            if ($statement->execute()) {
+                $resultado = $pdo->lastInsertId();
+            }
         } catch (PDOException $th) {
             error_log("Error UserModel->insert(" . $user->toJson(). ")");
             error_log($th->getMessage());
@@ -137,7 +139,7 @@ class UserModel extends Model{
 
         return $resultado;
     }
-    //Cambia la contraseña del usuario por una nueva
+    //Cambia la contraseña del usuario por una nueva siempre y cuando coincida la proporcionada con la actual
     public function changePassword($contrasena_actual, $contrasena_nueva , $user_id)
     {
  

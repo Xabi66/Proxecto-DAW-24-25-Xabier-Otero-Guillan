@@ -1,3 +1,5 @@
+import { loadHeaderFooter } from './functions.js';
+
 const $d=document,
     $formulario_edicion=$d.querySelector("#formulario_edicion"),
     $mensaje_error=$d.querySelector("#mensaje_error")
@@ -19,7 +21,7 @@ async function comprobarSesion() {
         return data;
     } else {
         //Redirije al usuario si la cookie no estaba o era incorrecta
-        window.location.href = "/frontend/inicioSesion.html";
+        window.location.href = "/inicioSesion.html";
     }
 }
 
@@ -27,7 +29,8 @@ async function comprobarSesion() {
 async function iniciar() {
     try {
         const datos=await comprobarSesion();
-
+        //Cargamos el header y footer
+        loadHeaderFooter;
         //Renderiza los datos de los inputs si la sesion se inicio
         $formulario_edicion.nombre.value= `${datos.user_name}` 
         $formulario_edicion.apellidos.value= `${datos.user_apellidos}` 
@@ -35,7 +38,7 @@ async function iniciar() {
 
     } catch (error) {
         //Redirije al usuario si no se pudo conectar con el servidor
-        window.location.href = "/frontend/inicioSesion.html";
+        window.location.href = "/inicioSesion.html";
     }
 }
 
@@ -55,12 +58,11 @@ async function editarPerfil(datosFormulario) {
         const mensaje = await resp.json();
     
         if (resp.ok) {
-            window.location.href = "/frontend/perfil/index.html";
+            window.location.href = "/perfil/index.html";
         } else {
             $mensaje_error.textContent = mensaje.error || "Error. No se pudo editar los datos.";
         }     
     } catch (error) {
-        //Redirije al usuario si no se pudo conectar con el servidor
         console.log(error)
     }
 }

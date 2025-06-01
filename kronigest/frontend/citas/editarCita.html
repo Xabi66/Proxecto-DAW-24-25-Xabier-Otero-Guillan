@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/generales.css" />
+    <script src="/assets/js/reserves/editarCita.js" type="module" defer></script>
+    <title>Editar cita</title>
+  </head>
+<body>
+  <header id="header">
+  </header>
+
+  <main>
+    <h1>MODIFIQUE LA CITA</h1>
+
+    <form id="formulario_servicio">
+        <label for="fecha">Seleccione un dia</label>
+        <input type="date" name="fecha" id="fecha" required>
+    
+        <label for="hora">Seleccione una hora disponible</label>
+        <select name="hora" id="hora" required>
+        </select>
+    
+        <label for="descripcion">Informacion adicional</label>
+        <textarea name="descripcion" id="descripcion" rows="10" cols="50"></textarea>
+
+        <p id="mensaje_error"></p>
+        <button type="submit" id="reservar" disabled>Editar</button>            
+    </form>
+    <section class="section_botonera">
+    </section>
+  </main>
+
+  <footer id="footer">
+  </footer>
+</body>
+</html>

@@ -7,10 +7,28 @@
 }
 
 :root{
+    --clr-body: #DAD9FF;
+
     --clr-cabeceras: #204359;
     --clr-cabeceras-texto: white;
     --clr-cabeceras-enlaces: #7DF5FF ;
     --clr-cabeceras-enlaces-hover: #42abb4 ;
+
+    --clr-fondo-botones: #2C64AE;
+    --clr-fondo-botones-hover: #114F89;
+    --clr-fondo-botones-active: #0E44CD;
+    --clr-fondo-botones-disabled: #2C64AE4D;
+    --clr-fondo-botones-danger: #CD2424;
+    --clr-fondo-botones-danger-hover: #891111;
+    --clr-fondo-botones-danger-active: #B31E1E;
+    --clr-fondo-botones-success: #2DCC50;
+    --clr-fondo-botones-success-hover: #096C19;
+    --clr-fondo-botones-success-active: #068F4D;
+
+    --clr-fondo-dialog: #fafafa;
+    --clr-fondo-dialog-backdrop: #078dab6a;
+
+    font-family: "Inter", 'Times New Roman', Times, serif;
 }
 
 body {
@@ -21,28 +39,319 @@ body {
     display: flex;
     flex-direction: column;
 
+    background-color: var(--clr-body);
 }
 
-/*Estilos header*/
+/*=============================================
+=            Estilos header                   =
+=============================================*/
 header{
     background-color: var(--clr-cabeceras);
     color: var(--clr-cabeceras-texto);
 
     display: flex;
+    flex-wrap: wrap; /*Hace que el nav en el header baje en movil*/
     justify-content: space-between;
+    gap: 1rem;
+    padding: 10px 5%;
+}
 
-    padding: 5px 5%;
+header a{
+    align-content: center;
 }
 
 .header_nav{
     display: flex;
-    align-items: center;
+    align-items: center;    
 }
 
 .header_nav > ul{
     list-style: none;
+    display: flex;    
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 1rem;
+}
+
+/*=============================================
+=            Estilos main                     =
+=============================================*/
+main{
+    flex: 1;
+    padding: 10px;
+
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    
+    gap: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/*Estilo de las cabeceras*/
+h1,h2{
+    width:100%;
+}
+/*Estilo de los p que aportan informacion adicional*/
+.requisitos{
+    max-width: 400px; 
+}
+/*Estilo de los p que deben ser mas grandes*/
+.parrafo_grande{
+    font-size: 1.5rem;
+}
+/*Estilo de los label y sus input*/
+label {
+    font-size: 18px;    
+    font-weight: bold;  
+}
+  
+input {
+    width: 200px;   
+    height: 30px;        
+    font-size: 18px;     
+    padding: 3px;        
+}
+
+select {
+    width: 200px;   
+    height: 30px;        
+    font-size: 18px;          
+}
+
+textarea{
+    max-width: 300px; 
+    resize:none;   
+    padding: 5px;        
+}
+
+textarea:disabled{
+    color:black;
+    align-self: center;
+}
+/*Estilo de las imagenes de los figure*/
+figure > img {
+    width: 200px;
+    max-height: 200px;
+}
+
+/*=============================================
+=            Estilos section                  =
+=============================================*/
+
+section{
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+}
+/*Estilos para los section que tienen una imagen de fondo cubriendo todo*/
+.section_imagen_fondo {
+    position: relative;
+
+    background-image: url(../img/services/services.jpg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+
+    color: white;
+    min-height: 30vh;
+    margin: -10px -10px 0px -10px;
+    padding: 10px;
+}
+
+.section_imagen_fondo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.section_imagen_fondo > h1 {
+    font-size: 2em;
+}
+
+.section_imagen_fondo > * {
+    z-index: 2;
+}
+
+.section_botonera{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*=============================================
+=            Estilos cards                    =
+=============================================*/
+.container_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(auto,300px));
+    gap: 2rem;
+}
+
+.card {
+    justify-content: left;
+    gap: 1rem;
+
+    background-color: var(--clr-fondo-botones);
+    color: white;
+
+    border-radius: 25px;
+    box-shadow: 4px 4px 10px black;
+
+    height: 300px;
+
+    overflow: hidden;
+}
+
+.card:hover, .card_reserve:not(.disabled):hover{
+    background-color: var(--clr-fondo-botones-hover);
+}
+
+.card:active, .card_reserve:not(.disabled):active{
+    background-color: var(--clr-fondo-botones-active);
+}
+
+.card > p{
+    font-size: 18px;
+}
+
+.card_figure {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.card_figure img, .figure_reserve img {
+    width: 100%;  
+    height: 100%; 
+    object-fit: cover;
+}
+
+/*Estilos de las card  de citas*/
+.card_reserve {
+    background-color: var(--clr-fondo-botones);
+    color: white;
+    border-radius: 25px;
+    box-shadow: 4px 4px 10px black;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    padding: 0.5rem;
+}
+
+.card_reserve:disabled{
+    background-color: var(--clr-fondo-botones);
+}
+
+/*Estilos del section con la informacion dentro de la cita*/
+.info_reserve{
+    align-items:flex-start;
+    text-align: left;
+}
+/*Estilos del figure dentro de la cita*/
+.figure_reserve {
+    border-radius: 100%;
+    overflow: hidden;
+    aspect-ratio: 1 / 1; 
+}
+
+/*=============================================
+=            Estilos botones                  =
+=============================================*/
+
+/*Estilos de los botones en general*/
+button{
+    background-color: var(--clr-fondo-botones);
+    color: var(--clr-cabeceras-texto);
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 20px;
+    padding: 0.8rem 1.2rem;
+}
+
+button:hover{
+    background-color: var(--clr-fondo-botones-hover);
+}
+
+button:active{
+    background-color: var(--clr-fondo-botones-active);
+}
+
+button:disabled{
+    background-color: var(--clr-fondo-botones-disabled);
+}
+/*Estilos de los botones que representan acciones como eliminar*/
+.btn-danger{
+    background-color: var(--clr-fondo-botones-danger);
+}
+
+.btn-danger:hover{
+    background-color: var(--clr-fondo-botones-danger-hover);
+}
+
+.btn-danger:active{
+    background-color: var(--clr-fondo-botones-danger-active);
+}
+/*Estilos de los botones para confirmar*/
+.btn-success{
+    background-color: var(--clr-fondo-botones-success);
+}
+
+.btn-success:hover{
+    background-color: var(--clr-fondo-botones-success-hover);
+}
+
+.btn-success:active{
+    background-color: var(--clr-fondo-botones-success-active);
+}
+
+/*=============================================
+=            Estilos formulario               =
+=============================================*/
+
+form{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+}
+
+/*=============================================
+=            Estilos footer                   =
+=============================================*/
+footer{
+    color: var(--clr-cabeceras-texto);
+    background-color: var(--clr-cabeceras);
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 10px;
+    gap: 15px;
+}
+
+footer p {
+    padding: 5px;
+    text-align: center; /*Alinea el texto al centro para cuando se reduzca*/ 
+    align-content: center; /*Alinea los p al centro verticalmente*/
+}
+
+/*=============================================
+=            Estilos header-footer            =
+=============================================*/
+header, footer{
+    min-height: 100px; /*Les da altura minima para evitar saltos al renderizar*/
 }
 
 .enlace_cabecera{
@@ -55,39 +364,18 @@ header{
     text-decoration: none;
 }
 
-/*Estilos main*/
-main{
-    flex: 1;
-
-    padding: 1%;
-}
-
-/*Estilos footer*/
-footer{
-    color: var(--clr-cabeceras-texto);
-    background-color: var(--clr-cabeceras);
-
-    padding: 10px;
-    
-}
-
-footer > p{
-    margin-bottom: 5px;
-}
-
-/*Estilos dialog*/
+/*=============================================
+=            Estilos dialog                   =
+=============================================*/
 dialog {
     padding: 1.5rem;
-    background-color: #fafafa;
+    background-color: var(--clr-fondo-dialog);
 
     margin: 0 auto;
     position: fixed;
     top: 25%;
 }
 
-dialog > section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:10px;
+dialog::backdrop{
+    background-color: var(--clr-fondo-dialog-backdrop);
 }

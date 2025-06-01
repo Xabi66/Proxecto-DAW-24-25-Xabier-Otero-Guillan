@@ -3,38 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/frontend/assets/css/generales.css" />
-    <script src="../assets/js/perfilUsuario.js" defer></script>
+    <link rel="stylesheet" href="/assets/css/generales.css" />
+    <script src="/assets/js/perfilUsuario.js" type="module" defer></script>
     <title>Perfil</title>
 </head>
 <body>
-  <header class="header">
-    <a href="/frontend/index.html">
-      <img src="/frontend/assets/img/logo_qkorte.png" alt="Logo de la empresa, haz clic para volver a la página de inicio"/>
-    </a>
-    
-    <nav class="header_nav">
-      <ul>
-        <li>
-          <a class="enlace_cabecera" href="/frontend/index.html">Inicio</a>
-        </li>
-        <li>
-          <a class="enlace_cabecera" href="/frontend/perfil/index.html">Perfil de usuario</a>
-        </li>
-        <li>
-          <a class="enlace_cabecera" href="/frontend/notificaciones.html">Notificaciones</a>
-        </li>
-        <li>
-          <a class="enlace_cabecera" href="/frontend/citas/index.html">Citas pendientes</a>
-        </li>
-        <li>
-          <a class="enlace_cabecera" href="/frontend/servicios/index.html">Servicios</a>
-        </li>
-        <li>
-          <a class="enlace_cabecera" href="/frontend/historial.html">Historial de citas</a>
-        </li>
-      </ul>
-    </nav>
+  <header id="header">
   </header>
   
     <main>
@@ -42,47 +16,47 @@
 
       <section>
         <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre" disabled><br><br>
+        <input type="text" name="nombre" id="nombre" disabled>
   
         <label for="email">Correo electrónico</label>
-        <input type="email" name="email" id="email" disabled><br><br>
+        <input type="email" name="email" id="email" disabled>
+
+        <button type='button' onclick="location.href='editarPerfil.html'">Editar perfil</button>
       </section>
 
-      <section>
-        <button type='button' onclick="location.href='editarPerfil.html'">Editar perfil</button>
+      <section class="section_botonera">
+        <h2>CONTRASEÑA</h2>
         <button type='button' onclick="location.href='cambiarContrasena.html'">Cambiar contraseña</button>
-        
+      </section>
+
+      <section class="section_botonera">
+        <h2>MI CUENTA</h2>
         <button type='button' id="button_delete" onclick="window.delete.showModal();">Borrar cuenta</button>
         <button type='button' onclick="window.logout.showModal();">Cerrar sesión</button>
       </section>
     </main>
     
-    <footer>
-      <p><strong>Teléfono:</strong> <a class="enlace_cabecera" href="tel:+655238754" title="Llama al 655238754">+655238754</a></p>
-      <p><strong>Correo electrónico:</strong> <a class="enlace_cabecera" href="mailto:qkorte@gmail.com" title="Manda un correo a qkorte@gmail.com">qkorte@gmail.com</a></p>
-      <p><strong>Horario:</strong> Lunes - Sábado: 10:00 - 14:00 y 16:00 - 20:00</p>
-      <p><strong>Dirección:</strong> Rúa Galicia 4, 36980 O Grove (Pontevedra)</p>
+    <footer id="footer">
     </footer>
 
     <dialog id="logout">
       <section>
         <h2>CERRAR SESIÓN</h2>
         <p>Si continuas se cerrará la sesión y la proxima vez deberas volver a ingresar tu correo y contraseña</p>
-        <section>
-          <button type='button' onclick="window.logout.close();">Cancelar</button>
-          <button type='button' id="confirm_logout">Confirmar</button>
+        <section class="section_botonera">
+          <button type='button' class="btn-danger" onclick="window.logout.close();">Cancelar</button>
+          <button type='button' class="btn-success" id="confirm_logout">Confirmar</button>
         </section>        
       </section>
-
     </dialog>
 
     <dialog id="delete">
       <section>
         <h2>ELIMINAR CUENTA</h2>
         <p>Una vez eliminada la cuenta no se podrá recuperar y todas tus citas pendientes se eliminarán.</p>
-        <section>
-          <button type='button' onclick="window.delete.close();">Cancelar</button>
-          <button type='button' id="confirm_delete">Confirmar</button>
+        <section class="section_botonera">
+          <button type='button' class="btn-danger" onclick="window.delete.close();">Cancelar</button>
+          <button type='button' class="btn-success" id="confirm_delete">Confirmar</button>
         </section>        
       </section>
     </dialog>

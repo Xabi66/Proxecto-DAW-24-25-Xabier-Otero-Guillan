@@ -1,3 +1,5 @@
+import { loadHeaderFooter } from './functions.js';
+
 const $d=document,
     $confirm_logout = $d.querySelector("#confirm_logout"),
     $confirm_delete = $d.querySelector("#confirm_delete"),
@@ -19,24 +21,27 @@ async function comprobarSesion() {
         return data;
     } else {
         //Redirije al usuario si la cookie no estaba o era incorrecta
-        window.location.href = "/frontend/inicioSesion.html";
+        window.location.href = "/inicioSesion.html";
     }
 }
 //Inicializa los datos de perfil tras comprobar la sesion
 async function iniciar() {
     try {
         const datos=await comprobarSesion();
-
+        //Cargamos el header y footer
+        loadHeaderFooter;
         //Renderiza los datos de los inputs si la sesion se inicio
         document.getElementById("nombre").value = `${datos.user_name} ${datos.user_apellidos}`
         document.getElementById("email").value = `${datos.user_email}` 
 
         if (datos.user_rol!=2){
             $button_delete.disabled=true;
+        } else {
+            $button_delete.classList.add("btn-danger")
         }
     } catch (error) {
         //Redirije al usuario si no se pudo conectar con el servidor
-        window.location.href = "/frontend/inicioSesion.html";
+        window.location.href = "/inicioSesion.html";
     }
 }
 
@@ -49,7 +54,7 @@ async function cerrarSesion() {
     });
 
     if (resp.ok) {
-        window.location.href = "/frontend/index.html";
+        window.location.href = "/index.html";
     }
 }
 //Borra al usuario de la BD (incluyendo su cookie de sesion) y lo redirige a inicio. Antes comprueba la cookie de sesion
@@ -65,18 +70,16 @@ async function borrarUsuario() {
             });
 
             if (resp.ok) {
-                window.location.href = "/frontend/index.html";
+                window.location.href = "/index.html";
             }            
         } else {
             console.log("Solo se pueden borrar usuarios normales")
         }
     } catch (error) {
         //Redirije al usuario si no se pudo conectar con el servidor
-        window.location.href = "/frontend/index.html";
+        window.location.href = "/index.html";
     }
 }
-
-
 
 $d.addEventListener("DOMContentLoaded", ev => {
     ev.preventDefault()

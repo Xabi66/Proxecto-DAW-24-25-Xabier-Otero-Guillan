@@ -1,6 +1,7 @@
 <?php
 include_once("Controller.php");
 include_once(PATH_MODEL."UserModel.php");
+include_once(PATH_MODEL."SessionModel.php");
 
 class UserController extends Controller{
 
@@ -23,21 +24,25 @@ class UserController extends Controller{
 
     public function getAll(){
         $model = new UserModel();
-        $disco = $model->getAll();
-        echo json_encode($disco,JSON_PRETTY_PRINT);
+        $user = $model->getAll();
+        echo json_encode($user,JSON_PRETTY_PRINT);
     }
 
     //Crea un nuevo usuario a partir del objeto proporcionado y intenta insertarlo
     public function insert($object){
         $model = new UserModel();
+        $sessionModel = new SessionModel();
         $user = User::fromJson($object);
-
+        
         //Antes de intentar insertarlo comprueba si el email ya esta registrado. Si lo esta manda un mensaje de error y no sigue
         if ($model->checkEmail($user)) {
             Controller::sendNotFound("Error. Este correo ya esta registrado.");
         } else {
             //Segun si fue insertado envia un mensaje u otro
-            if($model->insert($user)){
+            if($id=$model->insert($user)){
+                //Si lo inserto crea su entrada correspondiente en sessionModel
+                $sessionModel->insert($id);
+
                 Controller::sendSuccess("Usuario Creado");
             }else{
                 Controller::sendNotFound("Error. No se ha podido crear una cuenta");
@@ -127,7 +132,7 @@ class UserController extends Controller{
                 $_SESSION['user_apellidos'] = $datos->apellidos;
                 $_SESSION['user_email'] = $datos->email;
             }else{
-                Controller::sendNotFound("Error, tiene que cambiar algun datos de su perfil antes de confirmar");
+                Controller::sendNotFound("Error, tiene que cambiar algun dato de su perfil antes de confirmar");
             }  
         } else {
             Controller::sendNotFound("Error, falta algun dato");
@@ -136,11 +141,17 @@ class UserController extends Controller{
 
     //Hace login de un usuario segun el objeto recibido
     public function login($object){ 
+        //Borra cualquier posible dato residual que pueda haber quedado
+        $this->logout();
+        /*Configura la cookie de sesion que se creará. 
+        Secure es false ya que no hay ningun certificado HTTPS, pero en produccion debe ser true por seguridad*/
+        session_set_cookie_params(['lifetime' => 0, 'path' => '/','domain' => '','secure' => false, 'httponly' => true, 'samesite' => 'Strict' ]);
         // Inicia la sesión
         session_start();
-    
-        // Crea el modelo de Usuario y decodifica el objeto
+
+        // Crea los modelos y decodifica el objeto
         $model = new UserModel();
+        $sessionModel= new SessionModel();
         $datos = json_decode($object);
     
         // Obtenemos los datos, que serán email y contraseña
@@ -151,22 +162,30 @@ class UserController extends Controller{
         $user_authenticated = $model->login($email, $password);
     
         if ($user_authenticated) {
-            // Se guardan los datos en la sesión
-            $_SESSION['user_id'] = $user_authenticated->id;
-            $_SESSION['user_name'] = $user_authenticated->nombre;
-            $_SESSION['user_apellidos'] = $user_authenticated->apellidos;
-            $_SESSION['user_email'] = $user_authenticated->email;
-            $_SESSION['user_rol'] = $user_authenticated->rol_id;
-    
-            // Devolvemos que la sesión fue exitosa
-            echo json_encode(["success" => true]);
+            //Se regenera la session por seguridad
+            session_regenerate_id(true);
+            //Pilla el nuevo id de sesion y actualiza el valor correspondiente en la BD
+            $token = session_id();
+            
+            if($sessionModel->update($user_authenticated->id, sha1($token))){
+                // Se guardan los datos en la sesión
+                $_SESSION['user_id'] = $user_authenticated->id;
+                $_SESSION['user_name'] = $user_authenticated->nombre;
+                $_SESSION['user_apellidos'] = $user_authenticated->apellidos;
+                $_SESSION['user_email'] = $user_authenticated->email;
+                $_SESSION['user_rol'] = $user_authenticated->rol_id;
+
+                // Devolvemos que la sesión fue exitosa
+                echo json_encode(["success" => true]);
+            } else {
+                Controller::sendNotFound("Error al actualizar la sesión");
+            }
         } else {
             // Si no se puede hacer login, enviamos error
             Controller::sendNotFound("Correo o contraseña incorrectos.");
         }
     }
     
-
     //Devuelve los datos de la sesión actual si está logueado
     public function sesion() {
         //Iniciamos la sesion
@@ -176,6 +195,20 @@ class UserController extends Controller{
             http_response_code(401);
             return;
         }
+
+        //Comprueba si el token de la BD se corresponde con session_id()
+        $sessionModel = new SessionModel();
+        $token = $sessionModel->get($_SESSION['user_id'])->token;
+        //Si la autenticacion falla
+        if (sha1(session_id()) !== $token) {
+            //Vaciamos la sesion
+            session_unset();
+            //Destruimos la sesion
+            session_destroy();
+            Controller::sendNotFound("Error, la sesion no es valida");
+            die();
+        }
+
         //Devuelve un json_encode de los datos
         echo json_encode([
             "user_id" => $_SESSION['user_id'],
@@ -190,6 +223,11 @@ class UserController extends Controller{
     public function logout() {
         //Iniciamos la sesion
         session_start();
+        //Ponemos a nulo ese token en la BD
+        $sessionModel= new SessionModel;
+        if (isset($_SESSION['user_id'])) {
+            $sessionModel->update($_SESSION['user_id'], null);
+        }
         //Vaciamos la sesion
         session_unset();
         //Destruimos la sesion

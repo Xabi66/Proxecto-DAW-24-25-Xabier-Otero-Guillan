@@ -1,10 +1,14 @@
 <?php
 include_once("UserController.php");
+include_once("ServiceController.php");
+include_once("ReserveController.php");
 
 /**
  * Definicion de los nombres asociados a cada controlador en la URI.
  */
 define("CONTROLLER_USER", "user");
+define("CONTROLLER_SERVICE", "service");
+define("CONTROLLER_RESERVE", "reserve");
 
 class ControllerException extends Exception{
     function __construct()
@@ -38,6 +42,12 @@ abstract class Controller
         switch ($nombre) {
             case CONTROLLER_USER:
                 $controller = new UserController();
+                break;
+            case CONTROLLER_SERVICE:
+                $controller = new ServiceController();
+                break;
+            case CONTROLLER_RESERVE:
+                $controller = new ReserveController();
                 break;
             default:
                 throw new ControllerException();

@@ -1,3 +1,5 @@
+import { loadHeaderFooter } from './functions.js';
+
 const $d=document,
     $formulario_registro=$d.querySelector("#formulario_registro"),
     $mensaje_error=$d.querySelector("#mensaje_error")
@@ -14,7 +16,7 @@ async function comprobarSesion() {
 
     if (resp.ok) {
         //Redirije al usuario si ya hay una sesion activa
-        window.location.href = "/frontend/index.html";
+        window.location.href = "/perfil/index.html";
     }
 }
 
@@ -29,9 +31,9 @@ async function registrarUsuario(datos) {
     //Se espera a que la api responda con un mensaje, ya sea exitoso o no
     const mensaje= await resp.json()
 
-    //En base a la respuesta renderiza un mensaje u otro. Puede renderizar el mensaje de error propio de la api o por defecto uno genérico
+    //En base a la respuesta renderiza un mensaje o redirige a inicioSesion. Puede renderizar el mensaje de error propio de la api o por defecto uno genérico
     if (resp.ok) {
-        $mensaje_error.textContent = mensaje.success || "Usuario registrado correctamente.";
+        window.location.href = "/inicioSesion.html";
     } else {
         $mensaje_error.textContent = mensaje.error || "Error. No se pudo registrar el usuario.";
     }
@@ -43,8 +45,11 @@ $d.addEventListener("DOMContentLoaded",async ev=>{
     try {
         await comprobarSesion();
     } catch (error) {
-        window.location.href = "/frontend/index.html";   
+        window.location.href = "/index.html";   
     }
+
+    //Cargamos el header y footer
+    loadHeaderFooter;
 
     //Al hacer submit
     $formulario_registro.addEventListener('submit',async ev=>{
