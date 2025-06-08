@@ -11,11 +11,6 @@
   - [Guía de contribución](#guía-de-contribución)
   - [Links](#links)
     
-**ESTA PÁGINA ES LA QUE TIENE QUE ABRIRSE AL ABRIR EL REPOSITORIO!!!!!!**
-
-> *EXPLICACIÓN*: Este documento será a "*páxina de aterrizaxe*" do teu proxecto. Será ou primeiro que vexan vos que se interesen por el. Cúida a sua redacción con todo ou mimo. Elimina posteriormente todas as lineas "EXPLICACIÓN*" cando creas finalizada a súa redacción.
-> Podes acompañar á redacción deste ficheiro con imaxes ou gifs, pero non abuses deles.
-
 ## Taboleiro do proyecto
 
 Actualmente el proyecto se encuentra en fase de desarrollo.
@@ -39,20 +34,23 @@ Pasos para la instalación del proyecto:
 
 ## Uso
 
-> *EXPLICACIÓN*: É este apartado describe brevemente como se usará a aplicación Web do proxecto. Describe o uso da interface web *só o uso** (a modo de sumario) *dos aspectos máis relevantes do seu funcionamento** (máxima brevidade, coma se fose un anuncio reclamo ou comercial).
->
+Kronigest permite consultar y gestionar los servicios y citas de tú negocio desde cualquier dispositivo, de forma rápida y sencilla. Tras registrarse, los usuarios podrán ver los servicios disponibles, escoger el día y la hora de su cita y gestionarla como mejor les convenga.
 
 ## Sobre o autor
 
-> *EXPLICACIÓN*: Realiza unha breve descrición de quen es (perfil profesional), os teus puntos fortes, ou tecnoloxías que máis dominas... a motivación do proxecto, tendo sobre todo en conta un nicho de mercado sen explotar.. *Non máis de 200 palabras**. Indica a forma fiable de contactar contigo durante o proceso de creación do proxecto.
+Soy un estudiante de Desenvolvimiento de Aplicaciones Web que domina tecnologías tales como HTML, CSS, JavaScript, PHP y bases de datos SQL. Tengo experiencia elaborando tanto el frontend como el backend de aplicaciones web, empleando arquitecturas cliente-servidor y APIs REST para desenvolver diversos proyectos.
+
+Mis puntos fuertes son la estructuración y el manejo eficaz del código, tanto en el backend como en el frontend, la elaboración de diseños responsivos y la comunicación asíncrona mediante AJAX.
+
+Este proyecto nace de la necesidad de integrar a los negocios mas pequeños en el actual mercado digital, buscando que se puedan adaptar facilmente sin que esto les suponga un gran coste. Esta dirigido a aquellas empresas que todavia gestionan sus citas de forma manual mediante canales mas tradicionales, ofreciendoles una manera de gestionarlas más cómoda tanto para ellos como para sus clientes. A diferencia de otras plataformas de ámbito mas general, este proyecto se centra en las necesidades propias de cada negocio, ofreciendoles solo las funcionalidades que realmente necesiten y evitandoles costes extra a cambio de funciones innecesarias.
+
+En caso de ser necesario contactarme para realizar alguna pregunta o resolver alguna duda, estoy disponible mediante el siguiente correo electrónico: oteroxabier@gmail.com
 
 ## Licenza
 
-> *EXPLICACIÓN*: É requisito INDISPENSABLE o licenciar explicitamente o proxecto software. Recoméndase licenciar con GNU Free Documentation License Version 1.3*. Crear un ficheiro `LICENSE` na raiz do repo, co teu ficheiro de licenza. Lembra que se empregas unha licenza de software libre estás a autorizar a derivación da túa obra baixo a mesma licenza que elixas, podendo dar continuidade, p. e. outro alumno, para continuar o teu proxecto noutro curso.
+Este proyecto esta licenciado con GNU Free Documentation License Version 1.3*. Los detalles de la misma pueden ser consultados en el fichero [LICENSE](LICENSE)
 
 ## Índice
-
-> *EXPLICACIÓN*: Simplemente indexa ordenadamente todo o tey proxecto.
 
 1. [Anteproyecto](doc/templates/1_Anteproxecto.md)
 2. [Análise](doc/templates/2_Analise.md)
@@ -66,7 +64,18 @@ Pasos para la instalación del proyecto:
 
 > EXPLICACIÓN*: Tratándose dun proxecto de software libre, é moi importante que expoñas como se pode contribuír co teu proxecto. Algúns exemplos disto son realizar novas funcionalidades, corrección e/o optimización do código, realización de tests automatizados, novas interfaces de integración, desenvolvemento de plugins etc. Se o máis conciso que poidas.
 
+Si quieres contribuir al proyecto eres libre de crear tu propia rama y realizar los cambios que consideres oportunos. Algunas formas de contribuir son:
+
+>- Optimizar el código, haciendo especial hincapie en reutilizar aquellas partes del mismo que se repitan.
+
+>- Implementar nuevas funcionalidades relacionadas con el objetivo del proyecto, como por ejemplo un sistema de reseñas de los servicios. 
+
+>- Realizar test automáticos de diversas partes del código para demostrar como se desenvuelve frente a los errores.
+
+>- Analizar el proyecto en busca de posibles bugs o brechas de seguridad y como solucionarlos.
+
 ## Links
 
-> EXPLICACIÓN*: Ligazóns externas e descipciones destas ligazóns que creas conveniente indicar aquí. Xeralmente xa van estar integrados coa túa documentación, pero se requires realizar unha listaxe deles, leste é o lugar.
->
+1. [Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales.](https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673)
+
+2. [Ley 34/2002 de Servicios de la Sociedad de la Información y del Comercio Electrónico.](https://www.boe.es/buscar/doc.php?id=BOE-A-2002-13758)

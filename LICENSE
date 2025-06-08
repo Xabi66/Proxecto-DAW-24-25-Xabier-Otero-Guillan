@@ -1,0 +1,156 @@
+Licencia de Documentación Libre de GNU
+Versión 1.3, 3 de noviembre de 2008
+
+Derechos de autor © 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc. < https://fsf.org/ >
+
+Se permite a todo el mundo copiar y distribuir copias textuales de este documento de licencia, pero no se permite modificarlo.
+
+0. PREÁMBULO
+
+El propósito de esta Licencia es hacer que un manual, libro de texto u otro documento funcional y útil sea "libre" en el sentido de libertad: garantizar a todos la libertad efectiva de copiarlo y redistribuirlo, con o sin modificaciones, ya sea comercial o no comercialmente. Además, esta Licencia garantiza al autor y al editor una forma de obtener el reconocimiento por su trabajo, sin que se les considere responsables de las modificaciones realizadas por terceros.
+
+Esta licencia es una especie de «copyleft», lo que significa que las obras derivadas del documento deben ser, en el mismo sentido, libres. Complementa la Licencia Pública General GNU, una licencia copyleft diseñada para software libre.
+
+Hemos diseñado esta Licencia para su uso en manuales de software libre, ya que el software libre requiere documentación libre: un programa libre debe incluir manuales que ofrezcan las mismas libertades que el software. Sin embargo, esta Licencia no se limita a los manuales de software; puede utilizarse para cualquier obra textual, independientemente de su temática o de si se publica como libro impreso. Recomendamos esta Licencia principalmente para obras con fines instructivos o de referencia.
+
+1. APLICABILIDAD Y DEFINICIONES
+
+Esta Licencia se aplica a cualquier manual u otra obra, en cualquier soporte, que contenga un aviso del titular de los derechos de autor indicando que puede distribuirse bajo los términos de esta Licencia. Dicho aviso otorga una licencia mundial, libre de regalías y de duración ilimitada, para usar dicha obra bajo las condiciones aquí establecidas. El "Documento", en adelante, se refiere a dicho manual u obra. Cualquier persona del público es licenciatario y se le llama "usted". Usted acepta la licencia si copia, modifica o distribuye la obra de una manera que requiera autorización bajo la ley de derechos de autor.
+
+Una "Versión Modificada" del Documento significa cualquier obra que contenga el Documento o una parte del mismo, ya sea copiada textualmente o con modificaciones y/o traducida a otro idioma.
+
+Una "Sección Secundaria" es un apéndice o una sección preliminar del Documento que aborda exclusivamente la relación de los editores o autores del Documento con el tema general del Documento (o con asuntos relacionados) y no contiene nada que pueda recaer directamente sobre dicho tema. (Por lo tanto, si el Documento es en parte un libro de texto de matemáticas, una Sección Secundaria no puede explicar ninguna matemática). La relación podría deberse a una conexión histórica con el tema o con asuntos relacionados, o a una postura legal, comercial, filosófica, ética o política al respecto.
+
+Las "Secciones Invariantes" son ciertas Secciones Secundarias cuyos títulos se designan como Secciones Invariantes en la notificación que indica que el Documento se publica bajo esta Licencia. Si una sección no se ajusta a la definición anterior de Secundaria, no se permite designarla como Invariante. El Documento puede no contener Secciones Invariantes. Si el Documento no identifica ninguna Secciones Invariantes, no existe ninguna.
+
+Los "Textos de Portada" son fragmentos breves de texto que se listan, como Textos de Portada o Textos de Contraportada, en el aviso que indica que el Documento se publica bajo esta Licencia. Un Texto de Portada puede tener un máximo de 5 palabras y un Texto de Contraportada, un máximo de 25.
+
+Una copia "Transparente" del Documento se refiere a una copia legible por máquina, representada en un formato cuya especificación está disponible para el público general, que permite su revisión directa con editores de texto genéricos o (para imágenes compuestas por píxeles) con programas de dibujo genéricos o (para dibujos) con algún editor de dibujo de fácil acceso, y que es apta para la entrada en formateadores de texto o para la traducción automática a diversos formatos adecuados para la entrada en formateadores de texto. Una copia realizada en un formato de archivo que de otro modo sería Transparente, cuyo marcado, o la ausencia de él, se ha configurado para impedir o desalentar la modificación posterior por parte de los lectores, no es Transparente. Un formato de imagen no es Transparente si se utiliza para una cantidad considerable de texto. Una copia que no es "Transparente" se denomina "Opaca".
+
+Entre los formatos adecuados para copias transparentes se incluyen ASCII simple sin marcado, el formato de entrada Texinfo, el formato de entrada LaTeX, SGML o XML con una DTD pública, y HTML, PostScript o PDF estándar, diseñados para la modificación humana. Entre los formatos de imagen transparentes se incluyen PNG, XCF y JPG. Entre los formatos opacos se incluyen los formatos propietarios que solo pueden leerse y editarse con procesadores de texto propietarios, SGML o XML, para los cuales la DTD o las herramientas de procesamiento no suelen estar disponibles, y el HTML, PostScript o PDF generado por máquina, producido por algunos procesadores de texto únicamente para fines de salida.
+
+La "Portada" se refiere, en el caso de un libro impreso, a la propia portada, más las páginas siguientes necesarias para contener, de forma legible, el material que esta Licencia exige que aparezca en ella. En el caso de obras en formatos que no tienen portada propiamente dicha, se refiere al texto que aparece cerca del punto más prominente del título de la obra, antes del comienzo del cuerpo del texto.
+
+El "editor" significa cualquier persona o entidad que distribuye copias del Documento al público.
+
+Una sección "Titulada XYZ" se refiere a una subunidad del Documento cuyo título es exactamente XYZ o contiene XYZ entre paréntesis después del texto que traduce XYZ a otro idioma. (Aquí, XYZ se refiere al nombre de una sección específica mencionada más adelante, como "Agradecimientos", "Dedicatorias", "Respaldos" o "Historia"). "Conservar el título" de dicha sección al modificar el Documento significa que sigue siendo una sección "Titulada XYZ" según esta definición.
+
+El Documento puede incluir Exenciones de Garantía junto al aviso que indica que esta Licencia se aplica al Documento. Estas Exenciones de Garantía se consideran incluidas por referencia en esta Licencia, pero solo en lo que respecta a la exención de garantías: cualquier otra implicación que estas Exenciones de Garantía puedan tener es nula y no afecta al significado de esta Licencia.
+
+2. COPIA TITULAR
+
+Puede copiar y distribuir el Documento en cualquier medio, ya sea comercial o no comercial, siempre que esta Licencia, los avisos de derechos de autor y el aviso de licencia que indica que esta Licencia se aplica al Documento se reproduzcan en todas las copias y que no añada ninguna otra condición a las de esta Licencia. No puede utilizar medios técnicos para obstaculizar o controlar la lectura o la copia posterior de las copias que realice o distribuya. Sin embargo, puede aceptar una compensación a cambio de las copias. Si distribuye una cantidad suficiente de copias, también debe cumplir las condiciones de la sección 3.
+
+También podrá prestar copias, en las mismas condiciones establecidas anteriormente, y podrá exhibir copias públicamente.
+
+3. COPIA EN CANTIDAD
+
+Si publica copias impresas (o copias en medios que suelen tener portadas impresas) del Documento, en número superior a 100 ejemplares, y el aviso de licencia del Documento exige Textos de Portada, debe adjuntar las copias en portadas que incluyan, de forma clara y legible, todos estos Textos: Textos de Portada en la portada y Textos de Contraportada en la contraportada. Ambas portadas deben identificarle de forma clara y legible como editor de estas copias. La portada debe presentar el título completo con todas las palabras del título igualmente prominentes y visibles. Puede añadir otro material en las portadas. Las copias con cambios limitados a las portadas, siempre que conserven el título del Documento y cumplan estas condiciones, pueden considerarse copias literales en otros aspectos.
+
+Si los textos necesarios para cualquiera de las portadas son demasiado voluminosos para encajar de manera legible, debe colocar los primeros de la lista (tantos como quepan razonablemente) en la portada real y continuar el resto en las páginas adyacentes.
+
+Si publica o distribuye más de 100 copias opacas del Documento, deberá incluir una copia transparente legible por máquina junto con cada copia opaca, o bien indicar, en o junto con cada copia opaca, una ubicación en red informática desde la cual el público general pueda descargar, mediante protocolos de red estándar, una copia transparente completa del Documento, sin material añadido. Si opta por esta última opción, deberá tomar las medidas razonablemente prudentes, al iniciar la distribución de copias opacas en grandes cantidades, para garantizar que esta copia transparente permanezca accesible en la ubicación indicada hasta al menos un año después de la última vez que distribuya una copia opaca (directamente o a través de sus agentes o distribuidores) de esa edición al público.
+
+Se solicita, aunque no es obligatorio, que se comunique con los autores del Documento mucho antes de redistribuir una gran cantidad de copias, para darles la oportunidad de brindarle una versión actualizada del Documento.
+
+4. MODIFICACIONES
+
+Puede copiar y distribuir una Versión Modificada del Documento bajo las condiciones de las secciones 2 y 3 anteriores, siempre que publique dicha Versión Modificada bajo esta Licencia, cumpliendo la función del Documento, autorizando así su distribución y modificación a quien posea una copia. Además, debe realizar lo siguiente en la Versión Modificada:
+
+A. Use en la portada (y en las portadas, si las hubiera) un título distinto al del Documento y al de versiones anteriores (que, de haberlas, deberán figurar en la sección Historial del Documento). Puede usar el mismo título que una versión anterior si el editor original de dicha versión lo autoriza.
+B. Enumere en la Página de Título, como autores, una o más personas o entidades responsables de la autoría de las modificaciones en la Versión Modificada, junto con al menos cinco de los autores principales del Documento (todos sus autores principales, si tiene menos de cinco), a menos que lo eximan de este requisito.
+C. Indique en la página del título el nombre del editor de la Versión Modificada, como editor.
+D. Conservar todos los avisos de derechos de autor del Documento.
+E. Agregue un aviso de derechos de autor apropiado para sus modificaciones junto a los demás avisos de derechos de autor.
+F. Incluir, inmediatamente después de los avisos de derechos de autor, un aviso de licencia que otorgue al público permiso para usar la Versión Modificada bajo los términos de esta Licencia, en el formato que se muestra en el Anexo a continuación.
+G. Conservar en ese aviso de licencia las listas completas de Secciones Invariantes y Textos de Cubierta requeridos que se proporcionan en el aviso de licencia del Documento.
+H. Incluya una copia inalterada de esta Licencia.
+I. Conservar la sección "Historial", conservar su título y añadirle una sección que indique, como mínimo, el título, el año, los nuevos autores y la editorial de la versión modificada, tal como aparece en la portada. Si el documento no incluye una sección "Historial", crear una que indique el título, el año, los autores y la editorial del documento, tal como aparece en su portada, y añadir una sección que describa la versión modificada, tal como se indica en la oración anterior.
+J. Conservar la ubicación de red, si la hubiera, proporcionada en el Documento para el acceso público a una copia transparente del mismo, así como las ubicaciones de red proporcionadas en el Documento para las versiones anteriores en las que se basó. Estas pueden incluirse en la sección "Historial". Se puede omitir la ubicación de red de una obra publicada al menos cuatro años antes del Documento, o si el editor original de la versión a la que se refiere da su autorización.
+K. Para cualquier sección titulada “Agradecimientos” o “Dedicatorias”, conserve el título de la sección y preserve en la sección toda la sustancia y el tono de cada uno de los agradecimientos y/o dedicatorias de los colaboradores que allí se dan.
+L. Conservar todas las Secciones Invariables del Documento, sin modificaciones en su texto ni en sus títulos. Los números de sección o su equivalente no se consideran parte de los títulos de las secciones.
+M. Eliminar cualquier sección titulada "Recomendaciones". Dicha sección podría no incluirse en la Versión Modificada.
+N. No cambie el título de ninguna sección existente para que se titule "Respaldos" o para que entre en conflicto en título con alguna Sección Invariante.
+O. Conserve todas las exenciones de garantía.
+Si la Versión Modificada incluye nuevas secciones preliminares o apéndices que se consideran Secciones Secundarias y no contienen material copiado del Documento, puede, a su elección, designar algunas o todas estas secciones como invariantes. Para ello, añada sus títulos a la lista de Secciones Invariantes en el aviso de licencia de la Versión Modificada. Estos títulos deben ser distintos de los de cualquier otra sección.
+
+Puede agregar una sección titulada "Respaldos", siempre que no contenga nada más que respaldos de su Versión Modificada por parte de varias partes (por ejemplo, declaraciones de revisión por pares o que el texto ha sido aprobado por una organización como la definición autorizada de un estándar).
+
+Puede agregar un pasaje de hasta cinco palabras como Texto de Portada y un pasaje de hasta 25 palabras como Texto de Contraportada al final de la lista de Textos de Portada en la Versión Modificada. Solo un pasaje de Texto de Portada y uno de Texto de Contraportada puede ser agregado por (o mediante acuerdo con) una misma entidad. Si el Documento ya incluye un texto de portada para la misma portada, previamente agregado por usted o por acuerdo con la misma entidad en cuyo nombre actúa, no podrá agregar otro; sin embargo, podrá reemplazar el anterior, con el permiso explícito del editor anterior que lo agregó.
+
+El(los) autor(es) y editor(es) del Documento no otorgan mediante esta Licencia permiso para usar sus nombres con fines publicitarios ni para afirmar o implicar el respaldo de ninguna Versión Modificada.
+
+5. COMBINACIÓN DE DOCUMENTOS
+
+Puede combinar el Documento con otros documentos publicados bajo esta Licencia, según los términos definidos en la sección 4 anterior para versiones modificadas, siempre que incluya en la combinación todas las Secciones Invariantes de todos los documentos originales, sin modificar, y las enumere todas como Secciones Invariantes de su trabajo combinado en su aviso de licencia, y que conserve todas sus Exenciones de Garantía.
+
+La obra combinada solo debe contener una copia de esta Licencia, y varias Secciones Invariantes idénticas pueden reemplazarse con una sola copia. Si existen varias Secciones Invariantes con el mismo nombre pero diferente contenido, el título de cada sección debe ser único añadiendo al final, entre paréntesis, el nombre del autor o editor original de dicha sección, si se conoce, o un número único. Realice el mismo ajuste en los títulos de las secciones de la lista de Secciones Invariantes en el aviso de licencia de la obra combinada.
+
+En la combinación, debe combinar las secciones tituladas "Historia" en los distintos documentos originales, formando una sola sección titulada "Historia". Asimismo, combine las secciones tituladas "Agradecimientos" y "Dedicatorias". Debe eliminar todas las secciones tituladas "Respaldos".
+
+6. COLECCIONES DE DOCUMENTOS
+
+Usted puede hacer una colección que consista en el Documento y otros documentos publicados bajo esta Licencia, y reemplazar las copias individuales de esta Licencia en los diversos documentos con una sola copia que esté incluida en la colección, siempre que siga las reglas de esta Licencia para la copia textual de cada uno de los documentos en todos los demás aspectos.
+
+Puede extraer un solo documento de dicha colección y distribuirlo individualmente bajo esta Licencia, siempre que inserte una copia de esta Licencia en el documento extraído y siga esta Licencia en todos los demás aspectos relacionados con la copia textual de ese documento.
+
+7. AGREGACIÓN CON OBRAS INDEPENDIENTES
+
+Una compilación del Documento o sus derivados con otros documentos u obras independientes, dentro o sobre un volumen de un medio de almacenamiento o distribución, se denomina "agregado" si los derechos de autor resultantes de la compilación no se utilizan para limitar los derechos legales de los usuarios de la compilación más allá de lo que permiten las obras individuales. Cuando el Documento se incluye en un agregado, esta Licencia no se aplica a las demás obras del agregado que no sean, en sí mismas, obras derivadas del Documento.
+
+Si el requisito del Texto de Portada de la sección 3 es aplicable a estas copias del Documento, si este representa menos de la mitad del agregado total, el Texto de Portada podrá colocarse en portadas que lo encierren dentro del agregado, o en su equivalente electrónico si el Documento está en formato electrónico. De lo contrario, deberá aparecer en portadas impresas que encierren todo el agregado.
+
+8. TRADUCCIÓN
+
+La traducción se considera un tipo de modificación, por lo que puede distribuir traducciones del Documento según los términos de la sección 4. La sustitución de las Secciones Invariantes por traducciones requiere la autorización especial de los titulares de los derechos de autor, pero puede incluir traducciones de algunas o todas las Secciones Invariantes, además de las versiones originales de estas. Puede incluir una traducción de esta Licencia, de todos los avisos de licencia del Documento y de cualquier Exención de Garantía, siempre que incluya también la versión original en inglés de esta Licencia y las versiones originales de dichos avisos y exenciones de responsabilidad. En caso de discrepancia entre la traducción y la versión original de esta Licencia o de un aviso o exención de responsabilidad, prevalecerá la versión original.
+
+Si una sección del documento se titula "Agradecimientos", "Dedicatorias" o "Historia", el requisito (sección 4) de preservar su título (sección 1) normalmente requerirá cambiar el título real.
+
+9. TERMINACIÓN
+
+No podrá copiar, modificar, sublicenciar ni distribuir el Documento, salvo según lo dispuesto expresamente en esta Licencia. Cualquier intento de copiarlo, modificarlo, sublicenciarlo o distribuirlo será nulo y rescindirá automáticamente sus derechos bajo esta Licencia.
+
+Sin embargo, si usted cesa toda violación de esta Licencia, entonces su licencia de un titular de derechos de autor en particular se restablece (a) provisionalmente, a menos y hasta que el titular de los derechos de autor finalice explícita y definitivamente su licencia, y (b) permanentemente, si el titular de los derechos de autor no le notifica sobre la violación por algún medio razonable antes de 60 días después del cese.
+
+Además, su licencia de un titular de derechos de autor en particular se restablece de forma permanente si el titular de los derechos de autor le notifica la violación por algún medio razonable, si esta es la primera vez que recibe una notificación de violación de esta Licencia (para cualquier trabajo) de ese titular de derechos de autor, y usted corrige la violación antes de 30 días después de recibir la notificación.
+
+La rescisión de sus derechos bajo esta sección no implica la rescisión de las licencias de quienes hayan recibido copias o derechos de usted bajo esta Licencia. Si sus derechos han sido rescindidos y no se han restablecido permanentemente, la recepción de una copia de parte o de la totalidad del mismo material no le otorga ningún derecho a usarlo.
+
+10. FUTURAS REVISIONES DE ESTA LICENCIA
+
+La Free Software Foundation puede publicar periódicamente nuevas versiones revisadas de la Licencia de Documentación Libre de GNU. Estas nuevas versiones serán similares en esencia a la versión actual, pero podrían diferir en detalles para abordar nuevos problemas o inquietudes. Consulte https://www.gnu.org/licenses/ .
+
+Cada versión de la Licencia tiene un número de versión distintivo. Si el Documento especifica que se aplica una versión numerada específica de esta Licencia o cualquier versión posterior, usted tiene la opción de seguir los términos y condiciones de dicha versión o de cualquier versión posterior publicada (no como borrador) por la Free Software Foundation. Si el Documento no especifica un número de versión de esta Licencia, puede elegir cualquier versión publicada (no como borrador) por la Free Software Foundation. Si el Documento especifica que un apoderado puede decidir qué versiones futuras de esta Licencia se pueden utilizar, la declaración pública de aceptación de una versión por parte de dicho apoderado le autoriza permanentemente a elegir esa versión para el Documento.
+
+11. RENOVACIÓN DE LICENCIAS
+
+Un "Sitio de Colaboración Masiva Multiautor" (o "Sitio MMC") se refiere a cualquier servidor web que publique obras protegidas por derechos de autor y que, además, proporcione herramientas destacadas para que cualquiera pueda editarlas. Un wiki público que cualquiera pueda editar es un ejemplo de este tipo de servidor. Una "Colaboración Masiva Multiautor" (o "MMC") contenida en el sitio se refiere a cualquier conjunto de obras protegidas por derechos de autor publicadas en el sitio MMC.
+
+"CC-BY-SA" significa la licencia Creative Commons Attribution-Share Alike 3.0 publicada por Creative Commons Corporation, una corporación sin fines de lucro con sede principal en San Francisco, California, así como futuras versiones copyleft de esa licencia publicadas por esa misma organización.
+
+"Incorporar" significa publicar o republicar un Documento, total o parcialmente, como parte de otro Documento.
+
+Una MMC es "elegible para renovación de licencia" si está licenciada bajo esta Licencia, y si todas las obras que se publicaron por primera vez bajo esta Licencia en algún lugar distinto de esta MMC, y posteriormente se incorporaron total o parcialmente a la MMC, (1) no tenían textos de portada o secciones invariantes, y (2) se incorporaron, por lo tanto, antes del 1 de noviembre de 2008.
+
+El operador de un sitio MMC puede republicar un MMC contenido en el sitio bajo CC-BY-SA en el mismo sitio en cualquier momento antes del 1 de agosto de 2009, siempre que el MMC sea elegible para una nueva licencia.
+
+ADENDA: Cómo utilizar esta Licencia para sus documentos
+
+Para utilizar esta Licencia en un documento que haya escrito, incluya una copia de la Licencia en el documento y coloque los siguientes avisos de derechos de autor y licencia justo después de la página de título:
+
+    Copyright (C) AÑO TU NOMBRE.
+    Se concede permiso para copiar, distribuir y/o modificar este documento.
+    bajo los términos de la Licencia de Documentación Libre de GNU, Versión 1.3
+    o cualquier versión posterior publicada por la Free Software Foundation;
+    sin Secciones Invariantes, sin Textos en la Portada y sin Textos en la Contraportada.
+    Se incluye una copia de la licencia en la sección titulada "GNU
+    Licencia de Documentación Libre".
+
+Si tiene Secciones Invariantes, Textos de Portada y Textos de Contraportada, reemplace la línea "con … Textos." por lo siguiente:
+
+    con las Secciones Invariantes siendo ENUMERAR SUS TÍTULOS, con el
+    Los textos de la portada son LISTA y los de la contraportada son LISTA.
+
+Si tiene secciones invariantes sin textos de portada, o alguna otra combinación de las tres, fusione esas dos alternativas para adaptarlas a la situación.
+
+Si su documento contiene ejemplos no triviales de código de programa, le recomendamos publicar estos ejemplos en paralelo bajo la licencia de software libre de su elección, como la Licencia Pública General GNU, para permitir su uso en software libre.
