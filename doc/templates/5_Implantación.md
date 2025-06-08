@@ -13,9 +13,9 @@
 
 Para continuar desenvolviendo el proyecto es necesario contar con lo siguiente:
 
-	-Un entorno de desarrollo como por ejemplo Visual Studio
-	-Tener Docker instalado
-  -Un navegador web como por ejemplo Google Chrome
+>-Un entorno de desarrollo como por ejemplo Visual Studio
+>- Tener Docker instalado
+>- Un navegador web como por ejemplo Google Chrome
 
 Para comenzar debe descargarse el fichero zip del proyecto y descomprimirlo en la ubicación deseada. Tras esto hay que acceder desde una terminal a la carpeta del proyecto y levantar los contenedores con docker-compose up. Una vez levantados, hay que acceder desde un navegador a localhost:8000, introduciendo como nombre de usuario root y como contraseña bitnami, y ejecutar el codigo del archivo sql que se encuentra dentro del proyecto en la carpeta bases_de_datos. Tras esto la aplicación ya estará funcionando con todos sus datos y funcionalidades disponibles.
 

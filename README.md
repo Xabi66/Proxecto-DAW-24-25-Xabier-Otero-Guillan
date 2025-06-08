@@ -62,8 +62,6 @@ Este proyecto esta licenciado con GNU Free Documentation License Version 1.3*. L
 
 ## Guía de contribución
 
-> EXPLICACIÓN*: Tratándose dun proxecto de software libre, é moi importante que expoñas como se pode contribuír co teu proxecto. Algúns exemplos disto son realizar novas funcionalidades, corrección e/o optimización do código, realización de tests automatizados, novas interfaces de integración, desenvolvemento de plugins etc. Se o máis conciso que poidas.
-
 Si quieres contribuir al proyecto eres libre de crear tu propia rama y realizar los cambios que consideres oportunos. Algunas formas de contribuir son:
 
 >- Optimizar el código, haciendo especial hincapie en reutilizar aquellas partes del mismo que se repitan.
