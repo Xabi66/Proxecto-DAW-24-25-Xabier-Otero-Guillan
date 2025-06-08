@@ -13,7 +13,7 @@
 
 Para continuar desenvolviendo el proyecto es necesario contar con lo siguiente:
 
->-Un entorno de desarrollo como por ejemplo Visual Studio
+>- Un entorno de desarrollo como por ejemplo Visual Studio
 >- Tener Docker instalado
 >- Un navegador web como por ejemplo Google Chrome
 
