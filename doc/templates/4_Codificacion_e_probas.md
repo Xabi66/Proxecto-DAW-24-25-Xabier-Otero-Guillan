@@ -28,11 +28,15 @@ Cambios realizados sobre el prototipo original:
 > - En vez de eliminar el boton de borrar cuenta en la cuenta de la propia empresa, este se encuentra desactivado y aun si estuviese activado la aplicación detecta que esa cuenta no se puede eliminar debido a su rol.
 > - El boton de eliminar un servicio está dentro de la página de ese servicio en concreto en vez de en la página de editar ese servicio
 
+En cuanto a la utilización de código de terceros, el unico código que no es de elaboración propia es el documento js dentro de la carpeta libreria, el cual es una libreria de JavaScript llamada SweetAlert2.
+
 ## 2- Prototipos
 
 [Ver Figma](https://www.figma.com/design/kikFpU4xkhWabWEbbvvzY4/ProyectoDAW?node-id=2-2&t=e9g2RXawkTYaEqbH-1)
 
 ## 3- Innovación
+
+Para integrar una libreria de JS tuve que descargarla localmente y meterla en una carpeta llamada libreria. Integré en mi proyecto una libreria que facilita la creación de dialogs, pero debido al hecho de que coge con preferencia los estilos propios que define el script de la libreria tuve que añadir !important en mi css para mantener un estilo similar al del resto de mi proyecto.
 
 ## 4- Probas
 

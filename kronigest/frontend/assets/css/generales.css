@@ -268,14 +268,15 @@ section{
 =            Estilos botones                  =
 =============================================*/
 
-/*Estilos de los botones en general*/
+/*Estilos de los botones en general.
+Algunos parametros incluyen important para funcionar en los dialog de Sweetalert2*/
 button{
     background-color: var(--clr-fondo-botones);
     color: var(--clr-cabeceras-texto);
-    font-weight: bold;
+    font-weight: bold !important;
     font-size: 1rem;
-    border-radius: 20px;
-    padding: 0.8rem 1.2rem;
+    border-radius: 20px !important;
+    padding: 0.8rem 1.2rem !important;
 }
 
 button:hover{
@@ -294,11 +295,11 @@ button:disabled{
     background-color: var(--clr-fondo-botones-danger);
 }
 
-.btn-danger:hover{
+.btn-danger:not([disabled]):hover{
     background-color: var(--clr-fondo-botones-danger-hover);
 }
 
-.btn-danger:active{
+.btn-danger:not([disabled]):active{
     background-color: var(--clr-fondo-botones-danger-active);
 }
 /*Estilos de los botones para confirmar*/
@@ -306,11 +307,11 @@ button:disabled{
     background-color: var(--clr-fondo-botones-success);
 }
 
-.btn-success:hover{
+.btn-success:not([disabled]):hover{
     background-color: var(--clr-fondo-botones-success-hover);
 }
 
-.btn-success:active{
+.btn-success:not([disabled]):active{
     background-color: var(--clr-fondo-botones-success-active);
 }
 
@@ -362,20 +363,4 @@ header, footer{
 .enlace_cabecera:hover{
     color: var(--clr-cabeceras-enlaces-hover);
     text-decoration: none;
-}
-
-/*=============================================
-=            Estilos dialog                   =
-=============================================*/
-dialog {
-    padding: 1.5rem;
-    background-color: var(--clr-fondo-dialog);
-
-    margin: 0 auto;
-    position: fixed;
-    top: 25%;
-}
-
-dialog::backdrop{
-    background-color: var(--clr-fondo-dialog-backdrop);
 }

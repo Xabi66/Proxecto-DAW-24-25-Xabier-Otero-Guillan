@@ -1,9 +1,8 @@
 import { loadHeaderFooter } from './functions.js';
 
 const $d=document,
-    $confirm_logout = $d.querySelector("#confirm_logout"),
-    $confirm_delete = $d.querySelector("#confirm_delete"),
-    $button_delete = $d.querySelector("#button_delete");
+    $button_delete = $d.querySelector("#button_delete"),
+    $button_close_sesion = $d.querySelector("#button_close_sesion");
 
 const urlUser = "http://localhost/backend/route.php/user"
 
@@ -82,20 +81,51 @@ async function borrarUsuario() {
 }
 
 $d.addEventListener("DOMContentLoaded", ev => {
-    ev.preventDefault()
-    //Comprueba si hay sesion activa o no
+    ev.preventDefault();
+
+    // Inicia la sesión y carga datos
     iniciar();
 
-    //Al clickar en el boton de confirmar, cierra la sesion
-    $confirm_logout.addEventListener("click", ev =>{
+    //Dialog para cerrar la sesion
+    $button_close_sesion.addEventListener("click", ev => {
         ev.preventDefault();
-
-        cerrarSesion()
+        Swal.fire({
+            title: "CERRAR SESIÓN",
+            text: "Si continuas se cerrará la sesión y la proxima vez deberas volver a ingresar tu correo y contraseña",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonText: "Confirmar",
+            cancelButtonText: "Cancelar",
+            customClass: {
+                confirmButton: 'btn-success',
+                cancelButton: 'btn-danger'
+            }
+        }).then(result => {
+            if (result.isConfirmed) {
+                cerrarSesion();
+            }
+        });
     });
 
-    $confirm_delete.addEventListener("click", ev =>{
+    //Dialog para borrar la cuenta
+    $button_delete.addEventListener("click", ev => {
         ev.preventDefault();
-
-        borrarUsuario()
+        Swal.fire({
+            title: "ELIMINAR CUENTA",
+            text: "Una vez eliminada la cuenta no se podrá recuperar y todas tus citas pendientes se eliminarán.",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonText: "Confirmar",
+            cancelButtonText: "Cancelar",
+            customClass: {
+                confirmButton: 'btn-success',
+                cancelButton: 'btn-danger'
+            }
+        }).then(result => {
+            if (result.isConfirmed) {
+                borrarUsuario();
+            }
+        });
     });
-})
+
+});

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/generales.css" />
+    <script src="/assets/js/libreria/sweetalert2.all.min.js"></script>
     <script src="/assets/js/perfilUsuario.js" type="module" defer></script>
     <title>Perfil</title>
 </head>
@@ -31,35 +32,13 @@
 
       <section class="section_botonera">
         <h2>MI CUENTA</h2>
-        <button type='button' id="button_delete" onclick="window.delete.showModal();">Borrar cuenta</button>
-        <button type='button' onclick="window.logout.showModal();">Cerrar sesión</button>
+        <button type='button' id="button_delete">Borrar cuenta</button>
+        <button type='button' id="button_close_sesion">Cerrar sesión</button>
       </section>
     </main>
     
     <footer id="footer">
     </footer>
-
-    <dialog id="logout">
-      <section>
-        <h2>CERRAR SESIÓN</h2>
-        <p>Si continuas se cerrará la sesión y la proxima vez deberas volver a ingresar tu correo y contraseña</p>
-        <section class="section_botonera">
-          <button type='button' class="btn-danger" onclick="window.logout.close();">Cancelar</button>
-          <button type='button' class="btn-success" id="confirm_logout">Confirmar</button>
-        </section>        
-      </section>
-    </dialog>
-
-    <dialog id="delete">
-      <section>
-        <h2>ELIMINAR CUENTA</h2>
-        <p>Una vez eliminada la cuenta no se podrá recuperar y todas tus citas pendientes se eliminarán.</p>
-        <section class="section_botonera">
-          <button type='button' class="btn-danger" onclick="window.delete.close();">Cancelar</button>
-          <button type='button' class="btn-success" id="confirm_delete">Confirmar</button>
-        </section>        
-      </section>
-    </dialog>
 
   </body>
 </html>

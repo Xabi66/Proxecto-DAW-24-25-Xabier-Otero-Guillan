@@ -15,6 +15,8 @@
 
 5. Para evitar que se pudiese editar una cita una vez esta comenzase tuve que comprobar en base a si estaba en curso pero todavia no se habia cambiado su estado a finalizada ya que este se cambia una vez acaba. 
 
+6. Para cumplir el requisito de integrar una libreria JS descargué una que crea alertas y diálogos y sustitui los dialog de mi código por los propios de la libreria. Tuve que meter !important a varios atributos de los button para que asi los botones de los dialog sigan manteniendo un estilo similar a los del resto de la aplicación.
+
 ## 2- Tarefas
 
 [**<-Anterior**](../../README.md)

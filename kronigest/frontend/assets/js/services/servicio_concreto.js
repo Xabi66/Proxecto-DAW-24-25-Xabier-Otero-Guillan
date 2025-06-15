@@ -64,7 +64,7 @@ async function renderServices(service){
         ${rol==1 
             ? `<section class="section_botonera">
                 <button type='button' onclick="location.href='editarServicio.html?servicio=${service.id}' ">Editar Servicio</button>
-                <button class="btn-danger" type='button' id="button_delete" onclick="window.delete.showModal();">Borrar Servicio</button>
+                <button class="btn-danger" type='button' id="button_delete">Borrar Servicio</button>
             </section>` 
             : ""}
 
@@ -78,19 +78,6 @@ async function renderServices(service){
         <section class="section_botonera">
             <button type="button" onclick="window.location.href = './index.html'">Volver atrás</button>
         </section>
-
-        ${rol==1 
-        ? `<dialog id="delete">
-            <section>
-              <h2>ELIMINAR SERVICIO</h2>
-              <p>Una vez eliminado no se podrá recuperar y todas las citas vinculadas se eliminarán.</p>
-              <section class="section_botonera">
-                <button type='button' class="btn-danger" onclick="window.delete.close();">Cancelar</button>
-                <button type='button' class="btn-success" id="confirm_delete" >Confirmar</button>
-              </section>        
-            </section>
-        </dialog>` 
-        : ""}
         `
 }
 
@@ -133,11 +120,27 @@ $d.addEventListener("DOMContentLoaded", ev => {
     ev.preventDefault()
 
     iniciar();
-
-    //Cuando clickamos en main si tiene el id de confirmar borrado llama a la funcion
-    $main.addEventListener("click",async ev=>{
-        if (ev.target.id== "confirm_delete") {
-            await borrarServicio();
+    
+    //Cuando clickamos en main si tiene el id de button_delete genera su dialog para confirmar el borrado
+    $main.addEventListener("click", async ev => {
+        if (ev.target.id == "button_delete") {
+            ev.preventDefault();
+            Swal.fire({
+                title: "ELIMINAR SERVICIO",
+                text: "Una vez eliminado no se podrá recuperar y todas las citas vinculadas se eliminarán.",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonText: "Confirmar",
+                cancelButtonText: "Cancelar",
+                customClass: {
+                    confirmButton: 'btn-success',
+                    cancelButton: 'btn-danger'
+                }
+            }).then(result => {
+                if (result.isConfirmed) {
+                    borrarServicio();
+                }
+            });
         }
-    })
+    });
 })
