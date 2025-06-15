@@ -20,6 +20,8 @@
 
 ## 3- Sitios oficiais do software utilizado
 
+3. [SweetAlert2](https://sweetalert2.github.io/)
+
 ## 4- Normas ou documentos legais
 
 1. [Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales.](https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673)
