@@ -201,7 +201,7 @@ No existe ningun impedimento mas alla de la posibilidad de que un cliente solici
 
 Tal y como se indicó en el apartado anterior, los costes iniciales se compondrían de 1050 euros como inversión inicial y 12375,27 euros como costes fijos del primer año. A esto hay que sumarle los costes variables e impuestos como el IRPF.
 
-Por lo tanto, el primer año se gastaria un total de más de 12425,27 euros
+Por lo tanto, el primer año se gastaria un total de más de 13425,27 euros
 
 En cuanto a ingresos, estos supondrian aproximadamente una cantidad de 2895 euros totales a lo largo del primer año, lo que claramente da un balance negativo respecto a los gastos.
 

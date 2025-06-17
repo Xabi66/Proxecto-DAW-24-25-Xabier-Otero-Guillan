@@ -17,6 +17,9 @@
 1. [w3schools](https://www.w3schools.com/): Ofrece varios ejemplos y tutoriales para una gran variedad de lenguajes.
 2. [infoautonomos](https://www.infoautonomos.com/ser-autonomo-o-no/autonomo-o-sl/): Ofrece información variada sobre que ocnlleva ser autónomo y que beneficios puede obtener.
 3. [declarando](https://declarando.es/tarifa-plana-autonomos/): Contiene información sobre varias ventajas de ser autonomo.
+4. [Cifras PYME. Datos enero 2023](https://industria.gob.es/es-es/estadisticas/Cifras_PYME/CifrasPYME-enero2023.pdf)
+5. [Uso TIC en empresas. INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=estadistica_C&cid=1254736176743&menu=ultiDatos&idp=1254735576799)
+6. [Empresas activas. INE](https://www.ine.es/dyngs/Prensa/es/DIRCE2024.htm)
 
 ## 3- Sitios oficiais do software utilizado
 

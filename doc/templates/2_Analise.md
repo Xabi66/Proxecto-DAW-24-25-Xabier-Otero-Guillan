@@ -16,7 +16,7 @@ Los usuarios podrñan registrarse en la plataforma y a traves de la misma pedir 
 
 Por parte de los clientes, estos obtendran una forma sencilla de gestionar su calendario de citas, pudiendo realizar cualquier modificación sin ningun problema. Ademas, la plataforma está pensada para ajustarse a sus necesidades, pudiendo solicitar que incluya funciones adicionales al momento de contratar el servicio.
 
-La aplicación estará diseñada de forma responsive, haciendola accesible desd ecualquier dispositivo, y combinará tecnologias tales como HTML, CSS; JavaScript y PHP, buscando ofrecer una experiencia lo suficientemente intuitiva como para que cualquier tipo de usuario pueda emplearla aun sin contar con conocimientos tecnológicos.
+La aplicación estará diseñada de forma responsive, haciendola accesible desde cualquier dispositivo, y combinará tecnologias tales como HTML, CSS; JavaScript y PHP, buscando ofrecer una experiencia lo suficientemente intuitiva como para que cualquier tipo de usuario pueda emplearla aun sin contar con conocimientos tecnológicos.
 
 ## 2- Funcionalidades
 
