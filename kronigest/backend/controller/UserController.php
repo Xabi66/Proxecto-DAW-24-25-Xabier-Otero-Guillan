@@ -116,6 +116,9 @@ class UserController extends Controller{
             }  
 
         } else if (isset($datos->email) && isset($datos->nombre)) {
+            //Sanitiza los campos con htmlspecialchars.
+            $datos->nombre = htmlspecialchars($datos->nombre, ENT_QUOTES, 'UTF-8');
+            $datos->apellidos = htmlspecialchars($datos->apellidos ?? "", ENT_QUOTES, 'UTF-8');
             //Se crea un nuevo usuario con los datos proporcionados o vacios segun cada caso
             $user = new User($datos->nombre, $datos->email, "", null, $idUsuario ?? null, $datos->apellidos ?? "");
             //Si se cambió el email y ya esta registrado se envia un mensaje de error

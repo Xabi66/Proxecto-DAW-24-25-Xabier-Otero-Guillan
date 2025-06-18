@@ -145,7 +145,8 @@ class ReserveController extends Controller{
         $blockdateModel= new BlockdateModel();
 
         $data= json_decode($object);
-
+        //Sanitiza los campos con htmlspecialchars.
+        $data->informacion_adicional = htmlspecialchars($data->informacion_adicional ?? "", ENT_QUOTES, 'UTF-8');
         //Iniciamos la sesión
         session_start();
         //Pilla el id de la sesión

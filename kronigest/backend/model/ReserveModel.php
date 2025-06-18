@@ -26,6 +26,8 @@ class Reserve extends ModelObject{
 
     public static function fromJson($json): ModelObject {
         $data = json_decode($json);
+        //Sanitiza los campos con htmlspecialchars.
+        $data->informacion_adicional = htmlspecialchars($data->informacion_adicional ?? "", ENT_QUOTES, 'UTF-8');
         return new Reserve($data->id_usuario, $data->id_servicio, $data->fecha, $data->hora_inicio, $data->hora_fin, $data->estado ?? "pendiente" , $data->informacion_adicional ?? null, $data->id ?? null);
     }
 

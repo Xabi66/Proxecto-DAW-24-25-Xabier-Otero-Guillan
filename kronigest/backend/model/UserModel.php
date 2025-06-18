@@ -22,6 +22,10 @@ class User extends ModelObject{
 
     public static function fromJson($json):ModelObject{
         $data = json_decode($json);
+        //Sanitiza los campos con htmlspecialchars.
+        $data->nombre = htmlspecialchars($data->nombre, ENT_QUOTES, 'UTF-8');
+        $data->apellidos = htmlspecialchars($data->apellidos ?? "", ENT_QUOTES, 'UTF-8');
+
         return new User($data->nombre, $data->email, $data->contrasena, $data->rol_id, $data->id ?? null, $data->apellidos ?? null);
     }
 

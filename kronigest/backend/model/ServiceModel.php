@@ -24,6 +24,11 @@ class Service extends ModelObject{
 
     public static function fromJson($json):ModelObject{
         $data = json_decode($json);
+        //Sanitiza los campos con htmlspecialchars.
+        $data->nombre = htmlspecialchars($data->nombre, ENT_QUOTES, 'UTF-8');
+        $data->informacion = htmlspecialchars($data->informacion ?? "", ENT_QUOTES, 'UTF-8');
+        $data->imagen = htmlspecialchars($data->imagen ?? "services.jpg", ENT_QUOTES, 'UTF-8');
+        
         return new Service($data->nombre, $data->precio, $data->duracion_estimada, $data->informacion ?? "", $data->precio_reserva ?? 0.0, $data->imagen ?? "services.jpg", $data->id ?? null);
     }
 
